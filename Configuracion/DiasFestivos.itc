@@ -1,0 +1,29 @@
+## Inteli-Code, S.A. de C.V. 
+## Archivo de generación de días festivos de acuerdo a las reglas indicadas por la ley federal del trabajo
+## 
+## El formato del criterio es el siguiente:
+## Para las fechas fijas solo basta con poner el día y el mes en formato dd-mm
+## Para las fechas que se ajustan a un "n" numero de día de la semana de un mes especifico se deberá utilizar:
+##      Por ejemplo para el 5 de febrero, para el cual la ley indica "El primer Lunes de Febrero en conmemoración......"
+##             <1-2>-02
+##      En donde el <1-2> indica para el primer 1 que se trata del primero y el segundo 2 indica que se trata de un Lunes
+##      los días de la semana del segundo paramatro van del 1=Domingo hasta el 7=Sabado
+##      el parametro 02 representa el mes de Febrero
+##      Siendo así, la representación del 21 de Marzo en donde la ley indica:
+##      "El tercer lúnes de Marzo en conmemoración del 21 de Marzo", la codificacion quedaría <3-2>-03
+##
+## Para el caso del primero de Diciembre se utiliza otra codificación la cual indica que ha de ser festivo ese día
+## cada seis años cuando corresponda a la transición del poder ejecutivo federal, la manera de indicar esto es
+## incluyendo a la fecha 01-16 la codificación +6>2006, esto indica que se repite cada 6 años a partir del año 2006.      
+##
+## A continuación las codificaciones necesarias para representar los días festivos de acuerdo a la ley federal del trabajo
+##
+##
+01-01              ## El Primero de Enero
+<1-2>-02           ## El primer Lúnes de Febrero en conmemoración del 5 de Febrero
+<3-2>-03           ## El tercer lúnes de Marzo en conmemoración del 21 de Marzo
+01-05              ## El Primero de Mayo
+16-09              ## El 16 de Septiembre
+<3-2>-11           ## El tercer Lúnes de Noviembre en conmemoración del 20 de Novimebre
+01-12+6>2006       ## El primero de Diciembre cada seis años, correspondiente a la trasmisión del poder Ejecutivo Federal
+25-12              ## El 25 de DiciembreAguinaldo|SeguroVidaINFONAVIT|FechaInicio|FechaTermino|DIAST|DIASTIMSS|Inasistencias|InasistenciasAguinaldo|InasistenciasVacaciones|HorasExtra|Periodo|EstadoPersonal|FechaBaja|DiaFestivo|DiasEfectivos|SUELDO|SueldoIMSS|HDOBLES|HTRIPLES|DOBLES|TRIPLES|TEXTRA|TEGRAV|1DOM|2DOM|NDSMZ|DomingosTrabajados|DiasFestivos|DomingosLaborados|PrimaDominical|PDSIPT|SUELDOISPT|GravadoDiaISPT|PrestamoPersonal|LimiteInferior|CuotaFija|CuotaFijaDT|DifLimiteInferior|DifLimiteInferiorDT|PSELI|ISPT1|Subsidio|SubsidioDT|ISPTAS|ISPT|EyMCF|3|EyMCA|4|EyMPen|5|EyMPD|5|IyV|1|GuarderiasyPS||Retiro||CyV|2|Nil|Nil|Nil|CALCIMSS|IMSSEmpleado|PrestamoInfonavit|RETIROSAR|IMPUESTOESTATAL|RIESGOTRAB|TOTPER|TOTDED|NETO|

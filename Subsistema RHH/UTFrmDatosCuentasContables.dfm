@@ -1,0 +1,245 @@
+inherited FrmDatosCuentasContables: TFrmDatosCuentasContables
+  Caption = 'FrmDatosCuentasContables'
+  ClientHeight = 264
+  ClientWidth = 432
+  ExplicitWidth = 440
+  ExplicitHeight = 291
+  PixelsPerInch = 96
+  TextHeight = 13
+  inherited PanelBarraLugar: TPanel
+    Top = 215
+    Width = 432
+    ExplicitTop = 215
+    ExplicitWidth = 432
+  end
+  inherited PanelDatosLugares: TPanel
+    Width = 432
+    Height = 215
+    Padding.Left = 5
+    Padding.Top = 5
+    Padding.Right = 5
+    Padding.Bottom = 5
+    ExplicitWidth = 432
+    ExplicitHeight = 215
+    object GroupBox1: TGroupBox
+      Left = 6
+      Top = 6
+      Width = 420
+      Height = 203
+      Align = alClient
+      Caption = 'Datos de cuentas Contables'
+      TabOrder = 0
+      object JvLabel1: TJvLabel
+        Left = 21
+        Top = 27
+        Width = 91
+        Height = 13
+        Caption = 'Codigo Cta. Banco'
+        HotTrackFont.Charset = DEFAULT_CHARSET
+        HotTrackFont.Color = clWindowText
+        HotTrackFont.Height = -11
+        HotTrackFont.Name = 'Tahoma'
+        HotTrackFont.Style = []
+      end
+      object JvLabel2: TJvLabel
+        Left = 77
+        Top = 61
+        Width = 35
+        Height = 13
+        Caption = 'Codigo'
+        HotTrackFont.Charset = DEFAULT_CHARSET
+        HotTrackFont.Color = clWindowText
+        HotTrackFont.Height = -11
+        HotTrackFont.Name = 'Tahoma'
+        HotTrackFont.Style = []
+      end
+      object JvLabel3: TJvLabel
+        Left = 11
+        Top = 127
+        Width = 99
+        Height = 13
+        Caption = 'Titulo de Cta. Banco'
+        HotTrackFont.Charset = DEFAULT_CHARSET
+        HotTrackFont.Color = clWindowText
+        HotTrackFont.Height = -11
+        HotTrackFont.Name = 'Tahoma'
+        HotTrackFont.Style = []
+      end
+      object JvLabel4: TJvLabel
+        Left = 55
+        Top = 162
+        Width = 55
+        Height = 13
+        Caption = 'Cta. Banco'
+        HotTrackFont.Charset = DEFAULT_CHARSET
+        HotTrackFont.Color = clWindowText
+        HotTrackFont.Height = -11
+        HotTrackFont.Name = 'Tahoma'
+        HotTrackFont.Style = []
+      end
+      object JvLabel5: TJvLabel
+        Left = 77
+        Top = 92
+        Width = 31
+        Height = 13
+        Caption = 'Banco'
+        HotTrackFont.Charset = DEFAULT_CHARSET
+        HotTrackFont.Color = clWindowText
+        HotTrackFont.Height = -11
+        HotTrackFont.Name = 'Tahoma'
+        HotTrackFont.Style = []
+      end
+      object Image2: TImage
+        Left = 360
+        Top = 26
+        Width = 17
+        Height = 16
+        Cursor = crHandPoint
+        Picture.Data = {
+          0954506E67496D61676589504E470D0A1A0A0000000D49484452000000100000
+          001008060000001FF3FF610000001974455874536F6674776172650041646F62
+          6520496D616765526561647971C9653C000001764944415478DA63FCFFFF3F03
+          258071701970318D91819191018C9998186602858C81F8ECBF7F0CE9206520AC
+          3FEB3F6E032EA432A60135A701856681689D3407E32BB30E9C85F141B4C1ECFF
+          B3701A703A81F18C69AE8BF19595276E7D7FF5E5B376B285F1D5B927CE728AF1
+          F0AA0719A95D9871E8ACE982FF26380D381AC598C6C2CD96AB1EA4AFF3F4E483
+          E752E6F292CF4E3E7C2E61222B7967E3952B7FBEFE9A6CBD0C8F0BF6043282A8
+          3410D68BD23306C981F0951557CE02C5401A67B9ACC713069B3D18D3B804D873
+          B5FCE4751E9E7EF95CCE5854F2D1D9D7CFA50D84246F6E7D72E5FBA7DF937D77
+          E071C16A07C633AE45AAC627963EB8F5F9E5EFCF76A9E2C68766BF3CCB2BCECA
+          6BE027A87678F6ABB3A107F084C16C43C6346094A5DDFEC6304B958B212DB49A
+          DB7875EBD7B3303E88EEB98DC7058C8C8CAC404A1C88B9D3C519EA15D919D4EE
+          FF64B835F325433D50EC0F10BF00AAFF8ECF0066202500C4EC58121DC8800F40
+          F5BF701A400E187803004C4CCFE175D027640000000049454E44AE426082}
+      end
+      object Image1: TImage
+        Left = 360
+        Top = 62
+        Width = 17
+        Height = 16
+        Cursor = crHandPoint
+        Picture.Data = {
+          0954506E67496D61676589504E470D0A1A0A0000000D49484452000000100000
+          001008060000001FF3FF610000001974455874536F6674776172650041646F62
+          6520496D616765526561647971C9653C000001764944415478DA63FCFFFF3F03
+          258071701970318D91819191018C9998186602858C81F8ECBF7F0CE9206520AC
+          3FEB3F6E032EA432A60135A701856681689D3407E32BB30E9C85F141B4C1ECFF
+          B3701A703A81F18C69AE8BF19595276E7D7FF5E5B376B285F1D5B927CE728AF1
+          F0AA0719A95D9871E8ACE982FF26380D381AC598C6C2CD96AB1EA4AFF3F4E483
+          E752E6F292CF4E3E7C2E61222B7967E3952B7FBEFE9A6CBD0C8F0BF6043282A8
+          3410D68BD23306C981F0951557CE02C5401A67B9ACC713069B3D18D3B804D873
+          B5FCE4751E9E7EF95CCE5854F2D1D9D7CFA50D84246F6E7D72E5FBA7DF937D77
+          E071C16A07C633AE45AAC627963EB8F5F9E5EFCF76A9E2C68766BF3CCB2BCECA
+          6BE027A87678F6ABB3A107F084C16C43C6346094A5DDFEC6304B958B212DB49A
+          DB7875EBD7B3303E88EEB98DC7058C8C8CAC404A1C88B9D3C519EA15D919D4EE
+          FF64B835F325433D50EC0F10BF00AAFF8ECF0066202500C4EC58121DC8800F40
+          F5BF701A400E187803004C4CCFE175D027640000000049454E44AE426082}
+      end
+      object Image3: TImage
+        Left = 357
+        Top = 123
+        Width = 17
+        Height = 16
+        Cursor = crHandPoint
+        Picture.Data = {
+          0954506E67496D61676589504E470D0A1A0A0000000D49484452000000100000
+          001008060000001FF3FF610000001974455874536F6674776172650041646F62
+          6520496D616765526561647971C9653C000001764944415478DA63FCFFFF3F03
+          258071701970318D91819191018C9998186602858C81F8ECBF7F0CE9206520AC
+          3FEB3F6E032EA432A60135A701856681689D3407E32BB30E9C85F141B4C1ECFF
+          B3701A703A81F18C69AE8BF19595276E7D7FF5E5B376B285F1D5B927CE728AF1
+          F0AA0719A95D9871E8ACE982FF26380D381AC598C6C2CD96AB1EA4AFF3F4E483
+          E752E6F292CF4E3E7C2E61222B7967E3952B7FBEFE9A6CBD0C8F0BF6043282A8
+          3410D68BD23306C981F0951557CE02C5401A67B9ACC713069B3D18D3B804D873
+          B5FCE4751E9E7EF95CCE5854F2D1D9D7CFA50D84246F6E7D72E5FBA7DF937D77
+          E071C16A07C633AE45AAC627963EB8F5F9E5EFCF76A9E2C68766BF3CCB2BCECA
+          6BE027A87678F6ABB3A107F084C16C43C6346094A5DDFEC6304B958B212DB49A
+          DB7875EBD7B3303E88EEB98DC7058C8C8CAC404A1C88B9D3C519EA15D919D4EE
+          FF64B835F325433D50EC0F10BF00AAFF8ECF0066202500C4EC58121DC8800F40
+          F5BF701A400E187803004C4CCFE175D027640000000049454E44AE426082}
+      end
+      object Image4: TImage
+        Left = 357
+        Top = 162
+        Width = 17
+        Height = 16
+        Cursor = crHandPoint
+        Picture.Data = {
+          0954506E67496D61676589504E470D0A1A0A0000000D49484452000000100000
+          001008060000001FF3FF610000001974455874536F6674776172650041646F62
+          6520496D616765526561647971C9653C000001764944415478DA63FCFFFF3F03
+          258071701970318D91819191018C9998186602858C81F8ECBF7F0CE9206520AC
+          3FEB3F6E032EA432A60135A701856681689D3407E32BB30E9C85F141B4C1ECFF
+          B3701A703A81F18C69AE8BF19595276E7D7FF5E5B376B285F1D5B927CE728AF1
+          F0AA0719A95D9871E8ACE982FF26380D381AC598C6C2CD96AB1EA4AFF3F4E483
+          E752E6F292CF4E3E7C2E61222B7967E3952B7FBEFE9A6CBD0C8F0BF6043282A8
+          3410D68BD23306C981F0951557CE02C5401A67B9ACC713069B3D18D3B804D873
+          B5FCE4751E9E7EF95CCE5854F2D1D9D7CFA50D84246F6E7D72E5FBA7DF937D77
+          E071C16A07C633AE45AAC627963EB8F5F9E5EFCF76A9E2C68766BF3CCB2BCECA
+          6BE027A87678F6ABB3A107F084C16C43C6346094A5DDFEC6304B958B212DB49A
+          DB7875EBD7B3303E88EEB98DC7058C8C8CAC404A1C88B9D3C519EA15D919D4EE
+          FF64B835F325433D50EC0F10BF00AAFF8ECF0066202500C4EC58121DC8800F40
+          F5BF701A400E187803004C4CCFE175D027640000000049454E44AE426082}
+      end
+      object DBEdit1: TDBEdit
+        Left = 116
+        Top = 24
+        Width = 235
+        Height = 21
+        DataField = 'codigo'
+        DataSource = dsDatos
+        TabOrder = 0
+      end
+      object Edit1: TEdit
+        Left = 116
+        Top = 60
+        Width = 206
+        Height = 21
+        TabOrder = 1
+      end
+      object NxButton1: TNxButton
+        Left = 328
+        Top = 59
+        Width = 25
+        Caption = '...'
+        TabOrder = 2
+        OnClick = NxButton1Click
+      end
+      object DBEdit2: TDBEdit
+        Left = 383
+        Top = 24
+        Width = 33
+        Height = 21
+        DataField = 'idbanco'
+        DataSource = dsDatos
+        TabOrder = 3
+        Visible = False
+      end
+      object DBEdit3: TDBEdit
+        Left = 117
+        Top = 122
+        Width = 234
+        Height = 21
+        DataField = 'titulo'
+        DataSource = dsDatos
+        TabOrder = 4
+      end
+      object DBEdit4: TDBEdit
+        Left = 116
+        Top = 159
+        Width = 235
+        Height = 21
+        DataField = 'ctabanco'
+        DataSource = dsDatos
+        TabOrder = 5
+      end
+      object Edit2: TEdit
+        Left = 116
+        Top = 89
+        Width = 206
+        Height = 21
+        TabOrder = 6
+      end
+    end
+  end
+end

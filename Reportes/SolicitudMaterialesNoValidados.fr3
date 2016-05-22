@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<TfrxReport Version="4.10.3" DotMatrixReport="False" IniFile="\Software\Fast Reports" PreviewOptions.Buttons="4095" PreviewOptions.Zoom="1" PrintOptions.Printer="Por defecto" PrintOptions.PrintOnSheet="0" ReportOptions.CreateDate="40938.8237102083" ReportOptions.Description.Text="" ReportOptions.LastChange="41084.8888831944" ScriptLanguage="PascalScript" ScriptText.Text="begin&#13;&#10;&#13;&#10;end." PropData="044C656674026003546F700398000844617461736574730101063020446174615365743D2266726473446574616C6C652220446174615365744E616D653D2266726473446574616C6C65220001062C20446174615365743D22667264734461746F732220446174615365744E616D653D22667264734461746F73220000095661726961626C65730100055374796C650100">
+  <TfrxDataPage Name="Data" Height="1000" Left="0" Top="0" Width="1000"/>
+  <TfrxReportPage Name="Page1" Orientation="poLandscape" PaperWidth="279.4" PaperHeight="215.9" PaperSize="1" LeftMargin="10" RightMargin="10" TopMargin="10" BottomMargin="10" ColumnWidth="0" ColumnPositions.Text="" HGuides.Text="" VGuides.Text="">
+    <TfrxPageFooter Name="PageFooter1" Height="37.7953" Left="0" Top="540.47279" Width="980.410082">
+      <TfrxMemoView Name="Memo12" Left="744.56741" Top="7.55905999999993" Width="204.09462" Height="18.89765" ShowHint="False" Font.Charset="1" Font.Color="0" Font.Height="-13" Font.Name="Arial" Font.Style="0" Frame.Typ="15" ParentFont="False" Text="Página: [Page#] de [TotalPages#]"/>
+    </TfrxPageFooter>
+    <TfrxReportTitle Name="ReportTitle1" Height="136.06308" Left="0" Top="18.89765" Width="980.410082">
+      <TfrxMemoView Name="Memo1" Left="147.40167" Top="45.35436" Width="801.26036" Height="34.01577" ShowHint="False" StretchMode="smActualHeight" Font.Charset="1" Font.Color="0" Font.Height="-27" Font.Name="Arial" Font.Style="0" Frame.Typ="15" ParentFont="False" Text="Materiales no validados"/>
+      <TfrxMemoView Name="Memo13" Left="147.40167" Top="7.55906" Width="801.26036" Height="37.7953" ShowHint="False" Font.Charset="1" Font.Color="0" Font.Height="-27" Font.Name="Arial" Font.Style="1" Frame.Typ="15" ParentFont="False" Text="Solicitudes"/>
+      <TfrxMemoView Name="Memo14" Left="147.40167" Top="78.70872" Width="801.26036" Height="22.67718" ShowHint="False" Font.Charset="1" Font.Color="0" Font.Height="-17" Font.Name="Arial" Font.Style="1" Frame.Typ="11" HAlign="haRight" ParentFont="False" Text="[FormatDateTime('dd, mmm, yyyy',Date)]"/>
+      <TfrxMemoView Name="Memo15" Left="147.40167" Top="100.72449" Width="801.26036" Height="22.67718" ShowHint="False" Font.Charset="1" Font.Color="0" Font.Height="-17" Font.Name="Arial" Font.Style="1" Frame.Typ="11" HAlign="haRight" ParentFont="False" Text="Ciudad del Carmen, Campeche"/>
+      <TfrxPictureView Name="Picture1" Left="11.33859" Top="7.55906" Width="128.50402" Height="117.16543" ShowHint="False" DataField="imagen1" DataSet="Form2.FrxImagen" DataSetName="ReporteImagen" Frame.Typ="15" KeepAspectRatio="False" HightQuality="False" Transparent="False" TransparentColor="16777215"/>
+    </TfrxReportTitle>
+    <TfrxMasterData Name="MasterData1" Height="124.72449" Left="0" Top="215.43321" Width="980.410082" ColumnWidth="0" ColumnGap="0" DataSet="frdsDatos" DataSetName="frdsDatos" KeepTogether="True" RowCount="0">
+      <TfrxMemoView Name="Memo2" Left="22.67718" Top="30.33859" Width="215.43321" Height="22.67718" ShowHint="False" AllowHTMLTags="True" Text="&#60;b&#62;Solicitud #:&#60;/b&#62; [frdsDatos.&#34;serie&#34;]"/>
+      <TfrxMemoView Name="Memo3" Left="550.06339" Top="34.11812" Width="49.13389" Height="18.89765" ShowHint="False" AllowHTMLTags="True" Text="&#60;b&#62;Fecha:&#60;/b&#62;"/>
+      <TfrxMemoView Name="Memo4" Left="22.67718" Top="53.01577" Width="328.81911" Height="18.89765" ShowHint="False" AllowHTMLTags="True" Text="&#60;b&#62;Validó:&#60;/b&#62; [frdsDatos.&#34;NombreValido&#34;]"/>
+      <TfrxMemoView Name="Memo5" Left="385.51206" Top="53.01577" Width="328.81911" Height="18.89765" ShowHint="False" AllowHTMLTags="True" Text="&#60;b&#62;Verificó:&#60;/b&#62; [frdsDatos.&#34;NombreVerifico&#34;]"/>
+      <TfrxMemoView Name="Memo6" Left="249.44898" Top="30.33859" Width="215.43321" Height="22.67718" ShowHint="False" AllowHTMLTags="True" Text="&#60;b&#62;Estado:&#60;/b&#62; [Uppercase(&#60;frdsDatos.&#34;estado&#34;&#62;)]"/>
+      <TfrxLineView Name="Line1" Left="59.33859" Top="120.70872" Width="869.2919" Height="0" ShowHint="False" Frame.Typ="4"/>
+      <TfrxMemoView Name="Memo18" Left="62.33859" Top="86.69295" Width="52.91342" Height="30.23624" ShowHint="False" Font.Charset="1" Font.Color="0" Font.Height="-11" Font.Name="Arial" Font.Style="1" HAlign="haCenter" ParentFont="False" VAlign="vaBottom" Text="Cant.&#13;&#10;solic."/>
+      <TfrxMemoView Name="Memo19" Left="119.03154" Top="86.69295" Width="52.91342" Height="30.23624" ShowHint="False" Font.Charset="1" Font.Color="0" Font.Height="-11" Font.Name="Arial" Font.Style="1" HAlign="haCenter" ParentFont="False" VAlign="vaBottom" Text="Cant. a&#13;&#10;compras"/>
+      <TfrxMemoView Name="Memo20" Left="175.72449" Top="86.69295" Width="52.91342" Height="30.23624" ShowHint="False" Font.Charset="1" Font.Color="0" Font.Height="-11" Font.Name="Arial" Font.Style="1" HAlign="haCenter" ParentFont="False" VAlign="vaBottom" Text="Cant. a&#13;&#10;almacén"/>
+      <TfrxMemoView Name="Memo21" Left="232.41744" Top="86.69295" Width="56.69295" Height="30.23624" ShowHint="False" Font.Charset="1" Font.Color="0" Font.Height="-11" Font.Name="Arial" Font.Style="1" HAlign="haCenter" ParentFont="False" VAlign="vaBottom" Text="Cant.&#13;&#10;pendiente"/>
+      <TfrxMemoView Name="Memo22" Left="391.88992" Top="101.81107" Width="56.69295" Height="15.11812" ShowHint="False" Font.Charset="1" Font.Color="0" Font.Height="-12" Font.Name="Arial" Font.Style="1" ParentFont="False" Text="Código"/>
+      <TfrxMemoView Name="Memo23" Left="482.59864" Top="101.81107" Width="56.69295" Height="15.11812" ShowHint="False" Font.Charset="1" Font.Color="0" Font.Height="-12" Font.Name="Arial" Font.Style="1" ParentFont="False" Text="Artículo"/>
+      <TfrxMemoView Name="Memo24" Left="296.66945" Top="101.81107" Width="68.03154" Height="15.11812" ShowHint="False" Font.Charset="1" Font.Color="0" Font.Height="-12" Font.Name="Arial" Font.Style="1" ParentFont="False" Text="Requerido"/>
+      <TfrxLineView Name="Line2" Left="119.03154" Top="82.91342" Width="0" Height="41.57483" ShowHint="False" Frame.Typ="1"/>
+      <TfrxLineView Name="Line3" Left="175.72449" Top="82.91342" Width="0" Height="41.57483" ShowHint="False" Frame.Typ="1"/>
+      <TfrxLineView Name="Line4" Left="232.41744" Top="82.91342" Width="0" Height="41.57483" ShowHint="False" Frame.Typ="1"/>
+      <TfrxLineView Name="Line5" Left="391.88992" Top="82.91342" Width="0" Height="41.57483" ShowHint="False" Frame.Typ="1"/>
+      <TfrxLineView Name="Line6" Left="482.59864" Top="82.91342" Width="0" Height="41.57483" ShowHint="False" Frame.Typ="1"/>
+      <TfrxLineView Name="Line7" Left="292.88992" Top="82.91342" Width="0" Height="41.57483" ShowHint="False" Frame.Typ="1"/>
+      <TfrxMemoView Name="Memo25" Left="600.75634" Top="34.11812" Width="94.48825" Height="18.89765" ShowHint="False" DisplayFormat.FormatStr="dd/mm/yyyy" DisplayFormat.Kind="fkDateTime" Text="[frdsDatos.&#34;fecha&#34;]"/>
+      <TfrxMemoView Name="Memo26" Left="721.89023" Top="34.01577" Width="113.3859" Height="18.89765" ShowHint="False" AllowHTMLTags="True" Text="&#60;b&#62;Fecha requerida:&#60;/b&#62;"/>
+      <TfrxMemoView Name="Memo27" Left="838.58318" Top="34.01577" Width="94.48825" Height="18.89765" ShowHint="False" DisplayFormat.FormatStr="dd/mm/yyyy" DisplayFormat.Kind="fkDateTime" Text="[frdsDatos.&#34;fecharequerida&#34;]"/>
+    </TfrxMasterData>
+    <TfrxDetailData Name="DetailData1" Height="15.11812" Left="0" Top="362.83488" Width="980.410082" ColumnWidth="0" ColumnGap="0" DataSet="frdsDetalle" DataSetName="frdsDetalle" RowCount="0">
+      <TfrxMemoView Name="Memo7" Left="391.88992" Top="0" Width="86.92919" Height="15.11812" ShowHint="False" Font.Charset="1" Font.Color="0" Font.Height="-11" Font.Name="Arial" Font.Style="0" ParentFont="False" Text="[frdsDetalle.&#34;codigoarticulo&#34;]"/>
+      <TfrxMemoView Name="Memo8" Left="482.59864" Top="0" Width="438.42548" Height="15.11812" ShowHint="False" Font.Charset="1" Font.Color="0" Font.Height="-11" Font.Name="Arial" Font.Style="0" ParentFont="False" Text="[frdsDetalle.&#34;tituloarticulo&#34;]"/>
+      <TfrxMemoView Name="Memo9" Left="62.33859" Top="0" Width="52.91342" Height="15.11812" ShowHint="False" DisplayFormat.DecimalSeparator="." DisplayFormat.FormatStr="%2.2n" DisplayFormat.Kind="fkNumeric" Font.Charset="1" Font.Color="0" Font.Height="-11" Font.Name="Arial" Font.Style="0" HAlign="haRight" ParentFont="False" Text="[frdsDetalle.&#34;cantidad&#34;]"/>
+      <TfrxMemoView Name="Memo10" Left="119.03154" Top="0" Width="52.91342" Height="15.11812" ShowHint="False" DisplayFormat.DecimalSeparator="." DisplayFormat.FormatStr="%2.2n" DisplayFormat.Kind="fkNumeric" Font.Charset="1" Font.Color="0" Font.Height="-11" Font.Name="Arial" Font.Style="0" HAlign="haRight" ParentFont="False" Text="[frdsDetalle.&#34;cantidadvalidada&#34;]"/>
+      <TfrxMemoView Name="Memo11" Left="175.72449" Top="0" Width="52.91342" Height="15.11812" ShowHint="False" DisplayFormat.DecimalSeparator="." DisplayFormat.FormatStr="%2.2n" DisplayFormat.Kind="fkNumeric" Font.Charset="1" Font.Color="0" Font.Height="-11" Font.Name="Arial" Font.Style="0" HAlign="haRight" ParentFont="False" Text="[frdsDetalle.&#34;cantidadsurtida&#34;]"/>
+      <TfrxMemoView Name="Memo16" Left="232.41744" Top="0" Width="52.91342" Height="15.11812" ShowHint="False" DisplayFormat.DecimalSeparator="." DisplayFormat.FormatStr="%2.2n" DisplayFormat.Kind="fkNumeric" Font.Charset="1" Font.Color="0" Font.Height="-11" Font.Name="Arial" Font.Style="0" HAlign="haRight" ParentFont="False" Text="[frdsDetalle.&#34;cantidadpendiente&#34;]"/>
+      <TfrxMemoView Name="Memo17" Left="296.66945" Top="0" Width="94.48825" Height="15.11812" ShowHint="False" DisplayFormat.DecimalSeparator="." DisplayFormat.FormatStr="dd/mm/yyyy" DisplayFormat.Kind="fkDateTime" Font.Charset="1" Font.Color="0" Font.Height="-11" Font.Name="Arial" Font.Style="0" ParentFont="False" Text="[frdsDetalle.&#34;fecharequerida&#34;]"/>
+      <TfrxLineView Name="Line8" Left="119.03154" Top="0" Width="0" Height="15.11812" ShowHint="False" Frame.Typ="1"/>
+      <TfrxLineView Name="Line9" Left="175.72449" Top="0" Width="0" Height="15.11812" ShowHint="False" Frame.Typ="1"/>
+      <TfrxLineView Name="Line10" Left="232.41744" Top="0" Width="0" Height="15.11812" ShowHint="False" Frame.Typ="1"/>
+      <TfrxLineView Name="Line11" Left="391.88992" Top="0" Width="0" Height="15.11812" ShowHint="False" Frame.Typ="1"/>
+      <TfrxLineView Name="Line12" Left="482.86642" Top="0" Width="0" Height="15.11812" ShowHint="False" Frame.Typ="1"/>
+      <TfrxLineView Name="Line13" Left="293.02381" Top="0" Width="0" Height="15.11812" ShowHint="False" Frame.Typ="1"/>
+    </TfrxDetailData>
+    <TfrxFooter Name="Footer1" Height="79.37013" Left="0" Top="400.63018" Width="980.410082"/>
+  </TfrxReportPage>
+</TfrxReport>

@@ -1,0 +1,390 @@
+object FrmEstadoModificacion: TFrmEstadoModificacion
+  Left = 0
+  Top = 0
+  Caption = '   Estado de Modificaci'#243'n de Salario'
+  ClientHeight = 433
+  ClientWidth = 751
+  Color = clBtnFace
+  Font.Charset = DEFAULT_CHARSET
+  Font.Color = clWindowText
+  Font.Height = -11
+  Font.Name = 'Tahoma'
+  Font.Style = []
+  KeyPreview = True
+  OldCreateOrder = False
+  OnClose = FormClose
+  OnCreate = FormCreate
+  OnKeyDown = FormKeyDown
+  OnShow = FormShow
+  PixelsPerInch = 96
+  TextHeight = 13
+  object Panel1: TPanel
+    Left = 0
+    Top = 372
+    Width = 751
+    Height = 61
+    Align = alBottom
+    TabOrder = 0
+    object Btn_Guardar: TAdvShapeButton
+      Left = 308
+      Top = 15
+      Width = 80
+      Height = 22
+      Appearance.Shape = bsRectangle
+      Appearance.BorderColorHot = clBlack
+      Appearance.BorderColorDown = clMenuHighlight
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clWhite
+      Font.Height = -11
+      Font.Name = 'Tahoma'
+      Font.Style = []
+      ParentFont = False
+      TabOrder = 0
+      Text = 'Guardar'
+      Version = '5.0.1.4'
+      OnClick = Btn_GuardarClick
+    end
+    object Btn_Cancelar: TAdvShapeButton
+      Left = 394
+      Top = 14
+      Width = 80
+      Height = 22
+      Appearance.Shape = bsRectangle
+      Appearance.BorderColorHot = clBlack
+      Appearance.BorderColorDown = clMenuHighlight
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clWhite
+      Font.Height = -11
+      Font.Name = 'Tahoma'
+      Font.Style = []
+      ParentFont = False
+      TabOrder = 1
+      Text = 'Cancelar'
+      Version = '5.0.1.4'
+      OnClick = Btn_CancelarClick
+    end
+  end
+  object Panel2: TPanel
+    Left = 0
+    Top = 0
+    Width = 751
+    Height = 372
+    Align = alClient
+    TabOrder = 1
+    object JvLabel1: TJvLabel
+      Left = 59
+      Top = 46
+      Width = 74
+      Height = 13
+      Caption = 'C'#243'digo Salario:'
+      Transparent = True
+      HotTrackFont.Charset = DEFAULT_CHARSET
+      HotTrackFont.Color = clWindowText
+      HotTrackFont.Height = -11
+      HotTrackFont.Name = 'Tahoma'
+      HotTrackFont.Style = []
+    end
+    object JvLabel2: TJvLabel
+      Left = 101
+      Top = 65
+      Width = 32
+      Height = 13
+      Caption = 'T'#237'tulo:'
+      Transparent = True
+      HotTrackFont.Charset = DEFAULT_CHARSET
+      HotTrackFont.Color = clWindowText
+      HotTrackFont.Height = -11
+      HotTrackFont.Name = 'Tahoma'
+      HotTrackFont.Style = []
+    end
+    object JvLabel5: TJvLabel
+      Left = 53
+      Top = 88
+      Width = 80
+      Height = 13
+      Caption = 'Salario Anterior:'
+      Transparent = True
+      HotTrackFont.Charset = DEFAULT_CHARSET
+      HotTrackFont.Color = clWindowText
+      HotTrackFont.Height = -11
+      HotTrackFont.Name = 'Tahoma'
+      HotTrackFont.Style = []
+    end
+    object JvLabel6: TJvLabel
+      Left = 349
+      Top = 46
+      Width = 53
+      Height = 13
+      Caption = 'Aplicaci'#243'n:'
+      Transparent = True
+      HotTrackFont.Charset = DEFAULT_CHARSET
+      HotTrackFont.Color = clWindowText
+      HotTrackFont.Height = -11
+      HotTrackFont.Name = 'Tahoma'
+      HotTrackFont.Style = []
+    end
+    object JvLabel3: TJvLabel
+      Left = 61
+      Top = 135
+      Width = 72
+      Height = 13
+      Caption = 'Nuevo Salario:'
+      Transparent = True
+      HotTrackFont.Charset = DEFAULT_CHARSET
+      HotTrackFont.Color = clWindowText
+      HotTrackFont.Height = -11
+      HotTrackFont.Name = 'Tahoma'
+      HotTrackFont.Style = []
+    end
+    object JvLabel4: TJvLabel
+      Left = 32
+      Top = 162
+      Width = 100
+      Height = 13
+      Caption = 'Fecha de Aplicaci'#243'n:'
+      Transparent = True
+      HotTrackFont.Charset = DEFAULT_CHARSET
+      HotTrackFont.Color = clWindowText
+      HotTrackFont.Height = -11
+      HotTrackFont.Name = 'Tahoma'
+      HotTrackFont.Style = []
+    end
+    object JvLabel7: TJvLabel
+      Left = 75
+      Top = 189
+      Width = 58
+      Height = 13
+      Caption = 'Referencia:'
+      Transparent = True
+      HotTrackFont.Charset = DEFAULT_CHARSET
+      HotTrackFont.Color = clWindowText
+      HotTrackFont.Height = -11
+      HotTrackFont.Name = 'Tahoma'
+      HotTrackFont.Style = []
+    end
+    object JvLabel8: TJvLabel
+      Left = 67
+      Top = 247
+      Width = 66
+      Height = 13
+      Caption = 'Comentarios:'
+      Transparent = True
+      HotTrackFont.Charset = DEFAULT_CHARSET
+      HotTrackFont.Color = clWindowText
+      HotTrackFont.Height = -11
+      HotTrackFont.Name = 'Tahoma'
+      HotTrackFont.Style = []
+    end
+    object dtAplicacion: TJvDBDateTimePicker
+      Left = 138
+      Top = 162
+      Width = 122
+      Height = 21
+      Date = 41236.480218553240000000
+      Time = 41236.480218553240000000
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clBlue
+      Font.Height = -11
+      Font.Name = 'Tahoma'
+      Font.Style = [fsBold]
+      ParentFont = False
+      TabOrder = 0
+      DropDownDate = 41236.000000000000000000
+      DataField = 'FechaAplicacion'
+      DataSource = dsModificacion
+      ReadOnly = True
+    end
+    object edSalario: TJvDBCalcEdit
+      Left = 139
+      Top = 135
+      Width = 121
+      Height = 21
+      DisplayFormat = '$ #,###,#00.00'
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clBlue
+      Font.Height = -11
+      Font.Name = 'Tahoma'
+      Font.Style = [fsBold]
+      ParentFont = False
+      ReadOnly = True
+      TabOrder = 1
+      DecimalPlacesAlwaysShown = False
+      DataField = 'salario'
+      DataSource = dsModificacion
+    end
+    object DBMemo1: TDBMemo
+      Left = 139
+      Top = 189
+      Width = 475
+      Height = 52
+      DataField = 'Referencia'
+      DataSource = dsConsultaModificacion
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clBlue
+      Font.Height = -11
+      Font.Name = 'Tahoma'
+      Font.Style = []
+      ParentFont = False
+      ReadOnly = True
+      TabOrder = 2
+    end
+    object DBMemo2: TDBMemo
+      Left = 139
+      Top = 247
+      Width = 475
+      Height = 52
+      DataField = 'Comentarios'
+      DataSource = dsConsultaModificacion
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clBlue
+      Font.Height = -11
+      Font.Name = 'Tahoma'
+      Font.Style = []
+      ParentFont = False
+      ReadOnly = True
+      TabOrder = 3
+    end
+    object Picture: TJvDBImage
+      Left = 512
+      Top = 16
+      Width = 137
+      Height = 132
+      DataField = 'Documento'
+      DataSource = dsEstadoModificacion
+      Stretch = True
+      TabOrder = 4
+    end
+    object JvDBCalcEdit1: TJvDBCalcEdit
+      Left = 139
+      Top = 88
+      Width = 121
+      Height = 21
+      DisplayFormat = '$ #,###,#00.00'
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clBlue
+      Font.Height = -11
+      Font.Name = 'Tahoma'
+      Font.Style = [fsBold]
+      ParentFont = False
+      ReadOnly = True
+      TabOrder = 5
+      DecimalPlacesAlwaysShown = False
+      DataField = 'Salario'
+      DataSource = dsSalario
+    end
+    object Button1: TButton
+      Left = 559
+      Top = 150
+      Width = 43
+      Height = 25
+      Caption = '-----'
+      TabOrder = 6
+      OnClick = Button1Click
+    end
+  end
+  object DBEdit2: TDBEdit
+    Left = 139
+    Top = 65
+    Width = 331
+    Height = 21
+    BorderStyle = bsNone
+    DataField = 'TituloSalario'
+    DataSource = dsSalario
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clBlue
+    Font.Height = -11
+    Font.Name = 'Tahoma'
+    Font.Style = [fsBold]
+    ParentColor = True
+    ParentFont = False
+    ReadOnly = True
+    TabOrder = 2
+  end
+  object DBEdit1: TDBEdit
+    Left = 139
+    Top = 46
+    Width = 204
+    Height = 21
+    BorderStyle = bsNone
+    DataField = 'CodigoSalario'
+    DataSource = dsSalario
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clBlue
+    Font.Height = -13
+    Font.Name = 'Tahoma'
+    Font.Style = [fsBold]
+    ParentColor = True
+    ParentFont = False
+    ReadOnly = True
+    TabOrder = 3
+  end
+  object DBEdit3: TDBEdit
+    Left = 260
+    Top = 90
+    Width = 214
+    Height = 21
+    BorderStyle = bsNone
+    DataField = 'TituloMoneda'
+    DataSource = dsSalario
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clBlue
+    Font.Height = -11
+    Font.Name = 'Tahoma'
+    Font.Style = [fsBold]
+    ParentColor = True
+    ParentFont = False
+    TabOrder = 4
+  end
+  object DBEdit4: TDBEdit
+    Left = 408
+    Top = 48
+    Width = 82
+    Height = 21
+    BorderStyle = bsNone
+    DataField = 'FechaAplicacion'
+    DataSource = dsSalario
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clBlue
+    Font.Height = -11
+    Font.Name = 'Tahoma'
+    Font.Style = [fsBold]
+    ParentColor = True
+    ParentFont = False
+    ReadOnly = True
+    TabOrder = 5
+  end
+  object dsSalario: TDataSource
+    Left = 512
+    Top = 328
+  end
+  object cdEstadoModificacion: TClientDataSet
+    Aggregates = <>
+    Params = <>
+    Left = 40
+    Top = 320
+  end
+  object dsEstadoModificacion: TDataSource
+    DataSet = cdEstadoModificacion
+    Left = 152
+    Top = 304
+  end
+  object OpenDialog1: TOpenDialog
+    Left = 568
+    Top = 96
+  end
+  object cdConsultaModificacion: TClientDataSet
+    Aggregates = <>
+    Params = <>
+    Left = 272
+    Top = 320
+  end
+  object dsConsultaModificacion: TDataSource
+    DataSet = cdConsultaModificacion
+    Left = 408
+    Top = 320
+  end
+  object dsModificacion: TDataSource
+    Left = 584
+    Top = 328
+  end
+end

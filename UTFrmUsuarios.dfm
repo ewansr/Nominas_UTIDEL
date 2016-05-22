@@ -1,0 +1,943 @@
+inherited FrmUsuarios: TFrmUsuarios
+  Caption = 'Usuarios'
+  ClientHeight = 495
+  ClientWidth = 1177
+  ExplicitWidth = 1193
+  ExplicitHeight = 534
+  PixelsPerInch = 96
+  TextHeight = 13
+  inherited PanelFiltro: TcxGroupBox
+    ExplicitWidth = 1177
+    ExplicitHeight = 406
+    Height = 406
+    Width = 1177
+    inherited LbFiltros: TJvLabel
+      Top = 369
+      Width = 1165
+      ExplicitTop = 52
+      ExplicitWidth = 1079
+    end
+    inherited GroupBoxFiltro: TcxGroupBox
+      ExplicitWidth = 1171
+      ExplicitHeight = 351
+      Height = 351
+      Width = 1171
+      inherited BtnSearch: TcxButton
+        Top = 316
+        Width = 1159
+        TabOrder = 5
+        OnClick = BtnSearchClick
+        ExplicitLeft = 6
+      end
+      object edtFNombre: TAdvEdit
+        Left = 588
+        Top = 17
+        Width = 145
+        Height = 21
+        EmptyText = 'Nombre'
+        LabelFont.Charset = DEFAULT_CHARSET
+        LabelFont.Color = clWindowText
+        LabelFont.Height = -11
+        LabelFont.Name = 'Tahoma'
+        LabelFont.Style = []
+        Lookup.Separator = ';'
+        Color = clWindow
+        Enabled = True
+        TabOrder = 4
+        Visible = True
+        OnKeyPress = EditFUsuarioKeyPress
+        Version = '2.9.0.0'
+      end
+      object edtFUsuario: TAdvEdit
+        Left = 423
+        Top = 17
+        Width = 159
+        Height = 21
+        EmptyText = 'Usuario'
+        LabelFont.Charset = DEFAULT_CHARSET
+        LabelFont.Color = clWindowText
+        LabelFont.Height = -11
+        LabelFont.Name = 'Tahoma'
+        LabelFont.Style = []
+        Lookup.Separator = ';'
+        Color = clWindow
+        Enabled = True
+        TabOrder = 3
+        Visible = True
+        OnKeyPress = EditFUsuarioKeyPress
+        Version = '2.9.0.0'
+      end
+      object edtFRol: TAdvEdit
+        Left = 3
+        Top = 17
+        Width = 134
+        Height = 21
+        EmptyText = 'Rol'
+        LabelFont.Charset = DEFAULT_CHARSET
+        LabelFont.Color = clWindowText
+        LabelFont.Height = -11
+        LabelFont.Name = 'Tahoma'
+        LabelFont.Style = []
+        Lookup.Separator = ';'
+        Color = clWindow
+        Enabled = True
+        TabOrder = 0
+        Visible = True
+        OnKeyPress = EditFUsuarioKeyPress
+        Version = '2.9.0.0'
+      end
+      object edtFDepartamento: TAdvEdit
+        Left = 143
+        Top = 17
+        Width = 134
+        Height = 21
+        EmptyText = 'Departamento'
+        LabelFont.Charset = DEFAULT_CHARSET
+        LabelFont.Color = clWindowText
+        LabelFont.Height = -11
+        LabelFont.Name = 'Tahoma'
+        LabelFont.Style = []
+        Lookup.Separator = ';'
+        Color = clWindow
+        Enabled = True
+        TabOrder = 1
+        Visible = True
+        OnKeyPress = EditFUsuarioKeyPress
+        Version = '2.9.0.0'
+      end
+      object edtFCargo: TAdvEdit
+        Left = 283
+        Top = 17
+        Width = 134
+        Height = 21
+        EmptyText = 'Cargo'
+        LabelFont.Charset = DEFAULT_CHARSET
+        LabelFont.Color = clWindowText
+        LabelFont.Height = -11
+        LabelFont.Name = 'Tahoma'
+        LabelFont.Style = []
+        Lookup.Separator = ';'
+        Color = clWindow
+        Enabled = True
+        TabOrder = 2
+        Visible = True
+        OnKeyPress = edtFCargoKeyPress
+        Version = '2.9.0.0'
+      end
+    end
+  end
+  inherited PanelPrincipal: TPanel
+    Left = 1177
+    Width = 0
+    Height = 406
+    ExplicitWidth = 0
+    ExplicitHeight = 406
+    inherited DBGridPrincipal: TNextDBGrid
+      Width = 1175
+      Height = 379
+      ExplicitWidth = 1175
+      ExplicitHeight = 379
+      object NxDBTextColumn1: TNxDBTextColumn
+        Font.Charset = DEFAULT_CHARSET
+        Font.Color = clWindowText
+        Font.Height = -11
+        Font.Name = 'Tahoma'
+        Font.Style = []
+        Header.DisplayMode = dmTextAndImage
+        Header.Alignment = taCenter
+        Header.HideArrow = False
+        Options = [coCanClick, coCanInput, coCanSort, coPublicUsing, coShowTextFitHint]
+        ParentFont = False
+        Position = 0
+        SortType = stAlphabetic
+        Visible = False
+        FieldName = 'idusuario'
+      end
+      object NxDBTextColumn2: TNxDBTextColumn
+        DefaultWidth = 153
+        Font.Charset = DEFAULT_CHARSET
+        Font.Color = clWindowText
+        Font.Height = -11
+        Font.Name = 'Tahoma'
+        Font.Style = []
+        Header.Caption = 'Rol'
+        Header.DisplayMode = dmTextAndImage
+        Header.Glyph.Data = {
+          36040000424D3604000000000000360000002800000010000000100000000100
+          2000000000000004000000000000000000000000000000000000000000000000
+          0000000000000000000000000000000000000000000000000000000000000000
+          0000000000000000000000000000000000000000000000000000000000000000
+          0000000000000000000000000000000000000000003300000033000000330000
+          0033000000330000000000000000000000000000000000000000000000000000
+          000000000000000000000000000000000000686B70FF6C6D6EFF6D6D6EFF6C6D
+          6EFF686B70FF0000000000000000000000000000000000000000010100350000
+          003300000033000000330000003300000033000000330000003367696EFF0000
+          0033000000330000003300000033000000330000003300000033CA9636FFDFAC
+          48FFDBA641FFDBA640FFDBA63FFFDFA83FFFE5AC3EFFEEB23FFF5B6068FFEEB2
+          3FFFE5AC3EFFDFA83FFFDBA63FFFDBA641FFDCA846FFD4A13BFFA97117FFFFFF
+          FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF535559FFFFFF
+          FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFDBA745FFAA7114FFFFFF
+          FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF505152FFFFFF
+          FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFDAA540FFAA7114FFFFFF
+          FFFFD09530FFD19838FFD2993AFFD19838FFD1952FFFFFFFFFFF505152FFFFFF
+          FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFDAA43FFFAA7215FFFFFF
+          FFFFD29A3AFFD49F45FFD5A148FFD59F45FFD49B3AFFFFFFFFFF525354FFFFFF
+          FFFFF9F9F8FFF6F6F5FFF6F6F5FFF6F7F7FFFFFFFFFFDAA53FFFAA7215FFFFFF
+          FFFFD29733FFD49B3CFFD59D3EFFD49C3CFFD59934FFF8FBFFFF545556FFF6F5
+          F4FFEDECEBFFEBEAE9FFEAEAE9FFE9E9EAFFFFFFFFFFDAA53FFFAB7316FFFFFF
+          FFFFDFE3EDFFE0E5F0FFE1E6F1FFE1E5F0FFE2E6EEFFE9EAEEFF555759FFE9E8
+          EAFFE0E0E2FFDEDEE0FFDEDEE0FFDDDDE0FFFFFFFFFFDBA741FFAD761BFFF6EF
+          E5FFF3EADCFFF4EADBFFF4EADBFFF4EADBFFF5ECDBFFFDF1DEFF585C63FFFDF1
+          DEFFF5EBDAFFF3E9D9FFF3E9D9FFF2E9D9FFF2EBE1FFDEAB49FFB07B24FFAD76
+          1CFFAC7418FFAC7418FFAC7418FFAD7417FFAF7516FFB47815FF5D6572FFB478
+          15FFAF7516FFAD7417FFAC7418FFAC7418FFAA731AFFCA9536FF000000000000
+          0000000000000000000000000000000000000000003300000033636B77FF0000
+          0033000000330000000000000000000000000000000000000000000000000000
+          000000000000000000000000000000000000666C76FF696D74FF6A6D72FF696D
+          74FF666C76FF0000000000000000000000000000000000000000000000000000
+          0000000000000000000000000000000000000000000000000000000000000000
+          0000000000000000000000000000000000000000000000000000}
+        Header.Alignment = taCenter
+        Header.HideArrow = False
+        Options = [coCanClick, coCanInput, coCanSort, coPublicUsing, coShowTextFitHint]
+        ParentFont = False
+        Position = 1
+        SortType = stAlphabetic
+        Width = 153
+        FieldName = 'titulorol'
+      end
+      object NxDBTextColumn3: TNxDBTextColumn
+        DefaultWidth = 158
+        Font.Charset = DEFAULT_CHARSET
+        Font.Color = clWindowText
+        Font.Height = -11
+        Font.Name = 'Tahoma'
+        Font.Style = []
+        Header.Caption = 'Departamento'
+        Header.DisplayMode = dmTextAndImage
+        Header.Glyph.Data = {
+          36040000424D3604000000000000360000002800000010000000100000000100
+          2000000000000004000000000000000000000000000000000000000000000000
+          0000000000000000000000000000000000000000000000000000000000000000
+          0000000000000000000000000000000000000000000000000000000000000000
+          0000000000000000000000000000000000000000003300000033000000330000
+          0033000000330000000000000000000000000000000000000000000000000000
+          000000000000000000000000000000000000686B70FF6C6D6EFF6D6D6EFF6C6D
+          6EFF686B70FF0000000000000000000000000000000000000000010100350000
+          003300000033000000330000003300000033000000330000003367696EFF0000
+          0033000000330000003300000033000000330000003300000033CA9636FFDFAC
+          48FFDBA641FFDBA640FFDBA63FFFDFA83FFFE5AC3EFFEEB23FFF5B6068FFEEB2
+          3FFFE5AC3EFFDFA83FFFDBA63FFFDBA641FFDCA846FFD4A13BFFA97117FFFFFF
+          FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF535559FFFFFF
+          FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFDBA745FFAA7114FFFFFF
+          FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF505152FFFFFF
+          FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFDAA540FFAA7114FFFFFF
+          FFFFD09530FFD19838FFD2993AFFD19838FFD1952FFFFFFFFFFF505152FFFFFF
+          FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFDAA43FFFAA7215FFFFFF
+          FFFFD29A3AFFD49F45FFD5A148FFD59F45FFD49B3AFFFFFFFFFF525354FFFFFF
+          FFFFF9F9F8FFF6F6F5FFF6F6F5FFF6F7F7FFFFFFFFFFDAA53FFFAA7215FFFFFF
+          FFFFD29733FFD49B3CFFD59D3EFFD49C3CFFD59934FFF8FBFFFF545556FFF6F5
+          F4FFEDECEBFFEBEAE9FFEAEAE9FFE9E9EAFFFFFFFFFFDAA53FFFAB7316FFFFFF
+          FFFFDFE3EDFFE0E5F0FFE1E6F1FFE1E5F0FFE2E6EEFFE9EAEEFF555759FFE9E8
+          EAFFE0E0E2FFDEDEE0FFDEDEE0FFDDDDE0FFFFFFFFFFDBA741FFAD761BFFF6EF
+          E5FFF3EADCFFF4EADBFFF4EADBFFF4EADBFFF5ECDBFFFDF1DEFF585C63FFFDF1
+          DEFFF5EBDAFFF3E9D9FFF3E9D9FFF2E9D9FFF2EBE1FFDEAB49FFB07B24FFAD76
+          1CFFAC7418FFAC7418FFAC7418FFAD7417FFAF7516FFB47815FF5D6572FFB478
+          15FFAF7516FFAD7417FFAC7418FFAC7418FFAA731AFFCA9536FF000000000000
+          0000000000000000000000000000000000000000003300000033636B77FF0000
+          0033000000330000000000000000000000000000000000000000000000000000
+          000000000000000000000000000000000000666C76FF696D74FF6A6D72FF696D
+          74FF666C76FF0000000000000000000000000000000000000000000000000000
+          0000000000000000000000000000000000000000000000000000000000000000
+          0000000000000000000000000000000000000000000000000000}
+        Header.Alignment = taCenter
+        Header.HideArrow = False
+        Options = [coCanClick, coCanInput, coCanSort, coPublicUsing, coShowTextFitHint]
+        ParentFont = False
+        Position = 2
+        SortType = stAlphabetic
+        Width = 158
+        FieldName = 'titulodepartamento'
+      end
+      object NxDBTextColumn4: TNxDBTextColumn
+        DefaultWidth = 162
+        Font.Charset = DEFAULT_CHARSET
+        Font.Color = clWindowText
+        Font.Height = -11
+        Font.Name = 'Tahoma'
+        Font.Style = []
+        Header.Caption = 'Cargo'
+        Header.DisplayMode = dmTextAndImage
+        Header.Glyph.Data = {
+          36040000424D3604000000000000360000002800000010000000100000000100
+          2000000000000004000000000000000000000000000000000000000000000000
+          0000000000000000000000000000000000000000000000000000000000000000
+          0000000000000000000000000000000000000000000000000000000000000000
+          0000000000000000000000000000000000000000003300000033000000330000
+          0033000000330000000000000000000000000000000000000000000000000000
+          000000000000000000000000000000000000686B70FF6C6D6EFF6D6D6EFF6C6D
+          6EFF686B70FF0000000000000000000000000000000000000000010100350000
+          003300000033000000330000003300000033000000330000003367696EFF0000
+          0033000000330000003300000033000000330000003300000033CA9636FFDFAC
+          48FFDBA641FFDBA640FFDBA63FFFDFA83FFFE5AC3EFFEEB23FFF5B6068FFEEB2
+          3FFFE5AC3EFFDFA83FFFDBA63FFFDBA641FFDCA846FFD4A13BFFA97117FFFFFF
+          FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF535559FFFFFF
+          FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFDBA745FFAA7114FFFFFF
+          FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF505152FFFFFF
+          FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFDAA540FFAA7114FFFFFF
+          FFFFD09530FFD19838FFD2993AFFD19838FFD1952FFFFFFFFFFF505152FFFFFF
+          FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFDAA43FFFAA7215FFFFFF
+          FFFFD29A3AFFD49F45FFD5A148FFD59F45FFD49B3AFFFFFFFFFF525354FFFFFF
+          FFFFF9F9F8FFF6F6F5FFF6F6F5FFF6F7F7FFFFFFFFFFDAA53FFFAA7215FFFFFF
+          FFFFD29733FFD49B3CFFD59D3EFFD49C3CFFD59934FFF8FBFFFF545556FFF6F5
+          F4FFEDECEBFFEBEAE9FFEAEAE9FFE9E9EAFFFFFFFFFFDAA53FFFAB7316FFFFFF
+          FFFFDFE3EDFFE0E5F0FFE1E6F1FFE1E5F0FFE2E6EEFFE9EAEEFF555759FFE9E8
+          EAFFE0E0E2FFDEDEE0FFDEDEE0FFDDDDE0FFFFFFFFFFDBA741FFAD761BFFF6EF
+          E5FFF3EADCFFF4EADBFFF4EADBFFF4EADBFFF5ECDBFFFDF1DEFF585C63FFFDF1
+          DEFFF5EBDAFFF3E9D9FFF3E9D9FFF2E9D9FFF2EBE1FFDEAB49FFB07B24FFAD76
+          1CFFAC7418FFAC7418FFAC7418FFAD7417FFAF7516FFB47815FF5D6572FFB478
+          15FFAF7516FFAD7417FFAC7418FFAC7418FFAA731AFFCA9536FF000000000000
+          0000000000000000000000000000000000000000003300000033636B77FF0000
+          0033000000330000000000000000000000000000000000000000000000000000
+          000000000000000000000000000000000000666C76FF696D74FF6A6D72FF696D
+          74FF666C76FF0000000000000000000000000000000000000000000000000000
+          0000000000000000000000000000000000000000000000000000000000000000
+          0000000000000000000000000000000000000000000000000000}
+        Header.Alignment = taCenter
+        Header.HideArrow = False
+        Options = [coCanClick, coCanInput, coCanSort, coPublicUsing, coShowTextFitHint]
+        ParentFont = False
+        Position = 3
+        SortType = stAlphabetic
+        Width = 162
+        FieldName = 'titulocargo'
+      end
+      object NxDBTextColumn5: TNxDBTextColumn
+        DefaultWidth = 135
+        Font.Charset = DEFAULT_CHARSET
+        Font.Color = clWindowText
+        Font.Height = -11
+        Font.Name = 'Tahoma'
+        Font.Style = []
+        Header.Caption = 'Usuario'
+        Header.DisplayMode = dmTextAndImage
+        Header.Glyph.Data = {
+          36040000424D3604000000000000360000002800000010000000100000000100
+          2000000000000004000000000000000000000000000000000000000000000000
+          0000000000000000000000000000000000000000000000000000000000000000
+          0000000000000000000000000000000000000000000000000000000000000000
+          0000000000000000000000000000000000000000003300000033000000330000
+          0033000000330000000000000000000000000000000000000000000000000000
+          000000000000000000000000000000000000686B70FF6C6D6EFF6D6D6EFF6C6D
+          6EFF686B70FF0000000000000000000000000000000000000000010100350000
+          003300000033000000330000003300000033000000330000003367696EFF0000
+          0033000000330000003300000033000000330000003300000033CA9636FFDFAC
+          48FFDBA641FFDBA640FFDBA63FFFDFA83FFFE5AC3EFFEEB23FFF5B6068FFEEB2
+          3FFFE5AC3EFFDFA83FFFDBA63FFFDBA641FFDCA846FFD4A13BFFA97117FFFFFF
+          FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF535559FFFFFF
+          FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFDBA745FFAA7114FFFFFF
+          FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF505152FFFFFF
+          FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFDAA540FFAA7114FFFFFF
+          FFFFD09530FFD19838FFD2993AFFD19838FFD1952FFFFFFFFFFF505152FFFFFF
+          FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFDAA43FFFAA7215FFFFFF
+          FFFFD29A3AFFD49F45FFD5A148FFD59F45FFD49B3AFFFFFFFFFF525354FFFFFF
+          FFFFF9F9F8FFF6F6F5FFF6F6F5FFF6F7F7FFFFFFFFFFDAA53FFFAA7215FFFFFF
+          FFFFD29733FFD49B3CFFD59D3EFFD49C3CFFD59934FFF8FBFFFF545556FFF6F5
+          F4FFEDECEBFFEBEAE9FFEAEAE9FFE9E9EAFFFFFFFFFFDAA53FFFAB7316FFFFFF
+          FFFFDFE3EDFFE0E5F0FFE1E6F1FFE1E5F0FFE2E6EEFFE9EAEEFF555759FFE9E8
+          EAFFE0E0E2FFDEDEE0FFDEDEE0FFDDDDE0FFFFFFFFFFDBA741FFAD761BFFF6EF
+          E5FFF3EADCFFF4EADBFFF4EADBFFF4EADBFFF5ECDBFFFDF1DEFF585C63FFFDF1
+          DEFFF5EBDAFFF3E9D9FFF3E9D9FFF2E9D9FFF2EBE1FFDEAB49FFB07B24FFAD76
+          1CFFAC7418FFAC7418FFAC7418FFAD7417FFAF7516FFB47815FF5D6572FFB478
+          15FFAF7516FFAD7417FFAC7418FFAC7418FFAA731AFFCA9536FF000000000000
+          0000000000000000000000000000000000000000003300000033636B77FF0000
+          0033000000330000000000000000000000000000000000000000000000000000
+          000000000000000000000000000000000000666C76FF696D74FF6A6D72FF696D
+          74FF666C76FF0000000000000000000000000000000000000000000000000000
+          0000000000000000000000000000000000000000000000000000000000000000
+          0000000000000000000000000000000000000000000000000000}
+        Header.Alignment = taCenter
+        Header.HideArrow = False
+        Options = [coCanClick, coCanInput, coCanSort, coPublicUsing, coShowTextFitHint]
+        ParentFont = False
+        Position = 4
+        SortType = stAlphabetic
+        Width = 135
+        FieldName = 'usuario'
+      end
+      object NxDBTextColumn6: TNxDBTextColumn
+        DefaultWidth = 159
+        Font.Charset = DEFAULT_CHARSET
+        Font.Color = clWindowText
+        Font.Height = -11
+        Font.Name = 'Tahoma'
+        Font.Style = []
+        Header.Caption = 'Nombre'
+        Header.DisplayMode = dmTextAndImage
+        Header.Glyph.Data = {
+          36040000424D3604000000000000360000002800000010000000100000000100
+          2000000000000004000000000000000000000000000000000000000000000000
+          0007000000160000001D0000001D0000001D0000001D0000001D0000001D0000
+          001D0000001D0000001D0000001D0000001D00000016000000075252528E8C8C
+          8CF28C8C8CF28C8C8CF28C8C8CF28C8C8CF28C8C8CF28C8C8CF28C8C8CF28C8C
+          8CF28C8C8CF28C8C8CF28C8C8CF28C8C8CF2525252A8000000168D8D8DF2EEEE
+          EEFFEAEAEAFFEAEAEAFFEAEAEAFFEAEAEAFFEAEAEAFFEAEAEAFFEAEAEAFFEAEA
+          EAFFEAEAEAFFEAEAEAFFEAEAEAFFEEEEEEFF8D8D8DF20000001D8F8F8FF2EFEF
+          EFFF565656FF424242FF424242FF424242FF424242FF6C6C6CFFEBEBEBFF9E9E
+          9EFFB8B8B8FF9E9E9EFFB8B8B8FFEFEFEFFF8F8F8FF20000001D929292F2F1F1
+          F1FFB4B4B4FF484848FF404040FF404040FF525252FFC0C0C0FFEDEDEDFFEDED
+          EDFFEDEDEDFFEDEDEDFFEDEDEDFFF1F1F1FF929292F20000001D959595F2F2F2
+          F2FFEFEFEFFFDEDEDEFF585858FF656565FFE9E9E9FFEFEFEFFFEFEFEFFF9F9F
+          9FFFBABABAFF9F9F9FFFBABABAFFF2F2F2FF959595F20000001D989898F2F4F4
+          F4FFF1F1F1FFE0E0E0FF444444FF5C5C5CFFEBEBEBFFF1F1F1FFF1F1F1FFF1F1
+          F1FFF1F1F1FFF1F1F1FFF1F1F1FFF4F4F4FF989898F20000001D9C9C9CF2F5F5
+          F5FFF3F3F3FFAEAEAEFF363636FF363636FFD2D2D2FFF3F3F3FFF3F3F3FF9F9F
+          9FFFBBBBBBFF9F9F9FFFBBBBBBFFF5F5F5FF9C9C9CF20000001D9E9E9EF2F8F8
+          F8FFF6F6F6FFE7E7E7FF484848FF5F5F5FFFF3F3F3FFF5F5F5FFF5F5F5FFF6F6
+          F6FFF6F6F6FFF7F7F7FFF6F6F6FFF8F8F8FF9E9E9EF20000001DA1A1A1F2F9F9
+          F9FFFAFAFAFFFBFBFBFFF3F3F3FFF8F8F8FFF7F7F7FFF7F7F7FFF7F7F7FFF8F8
+          F8FFFAFAFAFFFBFBFBFFFAFAFAFFF9F9F9FFA1A1A1F20000001DA3A3A3F2FBFB
+          FBFFA3A3A3F2A3A3A3F2A3A3A3F2FAFAFAFFF9F9F9FFF9F9F9FFF9F9F9FFFAFA
+          FAFFA3A3A3F2A3A3A3F2A3A3A3F2FBFBFBFFA3A3A3F200000016A5A5A5F2FDFD
+          FDFFFDFDFDFFA5A5A5F2FDFDFDFFFDFDFDFFFDFDFDFFFDFDFDFFFDFDFDFFFDFD
+          FDFFFDFDFDFFA5A5A5F2FDFDFDFFFDFDFDFFA5A5A5F2000000076262628EA7A7
+          A7F2A7A7A7F26262628EA7A7A7F2A7A7A7F2A7A7A7F2A7A7A7F2A7A7A7F2A7A7
+          A7F2A7A7A7F26262628EA7A7A7F2A7A7A7F26262628E00000000000000000000
+          0000000000000000000000000000000000000000000000000000000000000000
+          0000000000000000000000000000000000000000000000000000000000000000
+          0000000000000000000000000000000000000000000000000000000000000000
+          0000000000000000000000000000000000000000000000000000000000000000
+          0000000000000000000000000000000000000000000000000000000000000000
+          0000000000000000000000000000000000000000000000000000}
+        Header.Alignment = taCenter
+        Header.HideArrow = False
+        Options = [coCanClick, coCanInput, coCanSort, coPublicUsing, coShowTextFitHint]
+        ParentFont = False
+        Position = 5
+        SortType = stAlphabetic
+        Width = 159
+        FieldName = 'nombres'
+      end
+      object NxDBTextColumn7: TNxDBTextColumn
+        DefaultWidth = 147
+        Font.Charset = DEFAULT_CHARSET
+        Font.Color = clWindowText
+        Font.Height = -11
+        Font.Name = 'Tahoma'
+        Font.Style = []
+        Header.Caption = 'Apellidos'
+        Header.DisplayMode = dmTextAndImage
+        Header.Glyph.Data = {
+          36040000424D3604000000000000360000002800000010000000100000000100
+          2000000000000004000000000000000000000000000000000000000000000000
+          0007000000160000001D0000001D0000001D0000001D0000001D0000001D0000
+          001D0000001D0000001D0000001D0000001D00000016000000075252528E8C8C
+          8CF28C8C8CF28C8C8CF28C8C8CF28C8C8CF28C8C8CF28C8C8CF28C8C8CF28C8C
+          8CF28C8C8CF28C8C8CF28C8C8CF28C8C8CF2525252A8000000168D8D8DF2EEEE
+          EEFFEAEAEAFFEAEAEAFFEAEAEAFFEAEAEAFFEAEAEAFFEAEAEAFFEAEAEAFFEAEA
+          EAFFEAEAEAFFEAEAEAFFEAEAEAFFEEEEEEFF8D8D8DF20000001D8F8F8FF2EFEF
+          EFFF565656FF424242FF424242FF424242FF424242FF6C6C6CFFEBEBEBFF9E9E
+          9EFFB8B8B8FF9E9E9EFFB8B8B8FFEFEFEFFF8F8F8FF20000001D929292F2F1F1
+          F1FFB4B4B4FF484848FF404040FF404040FF525252FFC0C0C0FFEDEDEDFFEDED
+          EDFFEDEDEDFFEDEDEDFFEDEDEDFFF1F1F1FF929292F20000001D959595F2F2F2
+          F2FFEFEFEFFFDEDEDEFF585858FF656565FFE9E9E9FFEFEFEFFFEFEFEFFF9F9F
+          9FFFBABABAFF9F9F9FFFBABABAFFF2F2F2FF959595F20000001D989898F2F4F4
+          F4FFF1F1F1FFE0E0E0FF444444FF5C5C5CFFEBEBEBFFF1F1F1FFF1F1F1FFF1F1
+          F1FFF1F1F1FFF1F1F1FFF1F1F1FFF4F4F4FF989898F20000001D9C9C9CF2F5F5
+          F5FFF3F3F3FFAEAEAEFF363636FF363636FFD2D2D2FFF3F3F3FFF3F3F3FF9F9F
+          9FFFBBBBBBFF9F9F9FFFBBBBBBFFF5F5F5FF9C9C9CF20000001D9E9E9EF2F8F8
+          F8FFF6F6F6FFE7E7E7FF484848FF5F5F5FFFF3F3F3FFF5F5F5FFF5F5F5FFF6F6
+          F6FFF6F6F6FFF7F7F7FFF6F6F6FFF8F8F8FF9E9E9EF20000001DA1A1A1F2F9F9
+          F9FFFAFAFAFFFBFBFBFFF3F3F3FFF8F8F8FFF7F7F7FFF7F7F7FFF7F7F7FFF8F8
+          F8FFFAFAFAFFFBFBFBFFFAFAFAFFF9F9F9FFA1A1A1F20000001DA3A3A3F2FBFB
+          FBFFA3A3A3F2A3A3A3F2A3A3A3F2FAFAFAFFF9F9F9FFF9F9F9FFF9F9F9FFFAFA
+          FAFFA3A3A3F2A3A3A3F2A3A3A3F2FBFBFBFFA3A3A3F200000016A5A5A5F2FDFD
+          FDFFFDFDFDFFA5A5A5F2FDFDFDFFFDFDFDFFFDFDFDFFFDFDFDFFFDFDFDFFFDFD
+          FDFFFDFDFDFFA5A5A5F2FDFDFDFFFDFDFDFFA5A5A5F2000000076262628EA7A7
+          A7F2A7A7A7F26262628EA7A7A7F2A7A7A7F2A7A7A7F2A7A7A7F2A7A7A7F2A7A7
+          A7F2A7A7A7F26262628EA7A7A7F2A7A7A7F26262628E00000000000000000000
+          0000000000000000000000000000000000000000000000000000000000000000
+          0000000000000000000000000000000000000000000000000000000000000000
+          0000000000000000000000000000000000000000000000000000000000000000
+          0000000000000000000000000000000000000000000000000000000000000000
+          0000000000000000000000000000000000000000000000000000000000000000
+          0000000000000000000000000000000000000000000000000000}
+        Header.Alignment = taCenter
+        Header.HideArrow = False
+        Options = [coCanClick, coCanInput, coCanSort, coPublicUsing, coShowTextFitHint]
+        ParentFont = False
+        Position = 6
+        SortType = stAlphabetic
+        Width = 147
+        FieldName = 'apellidos'
+      end
+      object NxDBMemoColumn1: TNxDBMemoColumn
+        DefaultWidth = 158
+        Font.Charset = DEFAULT_CHARSET
+        Font.Color = clWindowText
+        Font.Height = -11
+        Font.Name = 'Tahoma'
+        Font.Style = []
+        Header.Caption = 'Comentarios'
+        Header.DisplayMode = dmTextAndImage
+        Header.Glyph.Data = {
+          36040000424D3604000000000000360000002800000010000000100000000100
+          2000000000000004000000000000000000000000000000000000000000000000
+          0000000000000000000000000000000000000000000000000000000000000000
+          0000000000000000000000000000000000000000000000000000000000000000
+          00000000000000000000000000000909090F6464649F0909090F000000000000
+          0000000000000000000000000000000000000000000000000000000000000000
+          0000000000000000000000000000787878BFA0A0A0FF787878BF000000000000
+          0000000000000000000000000000000000000000000000000000000000000000
+          000000000000000000006464649FAEAEAEFFE3E3E3FFAEAEAEFF6464649F0000
+          0000000000000000000000000000000000000000000000000000000000000000
+          00003C3C3C5FA0A0A0FFBDBDBDFFEDEDEDFFEDEDEDFFEDEDEDFFBDBDBDFFA0A0
+          A0FFA0A0A0FFA0A0A0FFA0A0A0FF6464649F0000000000000000000000003C3C
+          3C5FBDBDBDFFE9E9E9FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+          FFFFFFFFFFFFFFFFFFFFF8F8F8FFC0C0C0FF6464649F0000000000000000A0A0
+          A0FFEBEBEBFFFBFBFBFFF6F6F6FFF4F4F4FFF4F4F4FFF4F4F4FFF4F4F4FFF4F4
+          F4FFF4F4F4FFF4F4F4FFFAFAFAFFF9F9F9FFA0A0A0FF0000000000000000A0A0
+          A0FFFFFFFFFFFAFAFAFFF8F8F8FFF8F8F8FFF8F8F8FFF8F8F8FFF8F8F8FFF8F8
+          F8FFF8F8F8FFF8F8F8FFF8F8F8FFFFFFFFFFA0A0A0FF0000000000000000A0A0
+          A0FFFFFFFFFFFCFCFCFFFCFCFCFFA0A0A0FFFCFCFCFFA0A0A0FFFCFCFCFFA0A0
+          A0FFFCFCFCFFFCFCFCFFFCFCFCFFFFFFFFFFA0A0A0FF0000000000000000A0A0
+          A0FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+          FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFA0A0A0FF0000000000000000A0A0
+          A0FFF3F3F3FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+          FFFFFFFFFFFFFFFFFFFFFFFFFFFFF3F3F3FFA0A0A0FF00000000000000003C3C
+          3C60C4C4C4FFF3F3F3FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+          FFFFFFFFFFFFFFFFFFFFF3F3F3FFC4C4C4FF3C3C3C6000000000000000000000
+          00003C3C3C60A0A0A0FFA0A0A0FFA0A0A0FFA0A0A0FFA0A0A0FFA0A0A0FFA0A0
+          A0FFA0A0A0FFA0A0A0FFA0A0A0FF3C3C3C600000000000000000000000000000
+          0000000000000000000000000000000000000000000000000000000000000000
+          0000000000000000000000000000000000000000000000000000000000000000
+          0000000000000000000000000000000000000000000000000000000000000000
+          0000000000000000000000000000000000000000000000000000000000000000
+          0000000000000000000000000000000000000000000000000000000000000000
+          0000000000000000000000000000000000000000000000000000}
+        Header.Alignment = taCenter
+        Header.HideArrow = False
+        Options = [coCanClick, coCanInput, coCanSort, coPublicUsing, coShowTextFitHint]
+        ParentFont = False
+        Position = 7
+        SortType = stAlphabetic
+        Width = 158
+        FieldName = 'comentarios'
+        MemoDisplayOptions = mdContent
+      end
+    end
+    inherited PnlPro: TPanel
+      Width = 1175
+      ExplicitWidth = 1175
+      inherited PBPaginacion: TAdvProgressBar
+        Width = 1077
+        ExplicitWidth = 1077
+      end
+      inherited PnlNum: TPanel
+        Left = 1078
+        ExplicitLeft = 1078
+      end
+    end
+  end
+  inherited PanelBarra: TcxGroupBox
+    Top = 457
+    ExplicitTop = 457
+    ExplicitWidth = 1177
+    Width = 1177
+    inherited Panel1: TcxGroupBox
+      ExplicitWidth = 1081
+      Width = 1081
+    end
+    inherited Panel2: TcxGroupBox
+      Left = 1082
+      ExplicitLeft = 1082
+    end
+  end
+  inherited MainPopupMenu: TPopupMenu
+    Left = 552
+  end
+  inherited cdDatos: TClientDataSet
+    AfterScroll = cdDatosAfterScroll
+  end
+  inherited dsDatos: TDataSource
+    Left = 400
+    Top = 120
+  end
+  inherited DxBManagerMain: TdxBarManager
+    DockControlHeights = (
+      0
+      0
+      51
+      0)
+  end
+  object FrxUsuarios: TfrxDBDataset
+    UserName = 'ReporteUsuarios'
+    CloseDataSource = False
+    DataSource = dsDatos
+    BCDToCurrency = False
+    Left = 480
+  end
+  object frxReporteUsuarios: TfrxReport
+    Version = '4.10.3'
+    DotMatrixReport = False
+    IniFile = '\Software\Fast Reports'
+    PreviewOptions.Buttons = [pbPrint, pbLoad, pbSave, pbExport, pbZoom, pbFind, pbOutline, pbPageSetup, pbTools, pbEdit, pbNavigator, pbExportQuick]
+    PreviewOptions.Zoom = 1.000000000000000000
+    PrintOptions.Printer = 'Por defecto'
+    PrintOptions.PrintOnSheet = 0
+    ReportOptions.CreateDate = 40938.823710208300000000
+    ReportOptions.LastChange = 40971.728457025470000000
+    ScriptLanguage = 'PascalScript'
+    ScriptText.Strings = (
+      'begin'
+      ''
+      'end.')
+    Left = 504
+    Datasets = <
+      item
+        DataSet = Form2.FrxImagen
+        DataSetName = 'ReporteImagen'
+      end
+      item
+        DataSet = FrxUsuarios
+        DataSetName = 'ReporteUsuarios'
+      end>
+    Variables = <>
+    Style = <>
+    object Data: TfrxDataPage
+      Height = 1000.000000000000000000
+      Width = 1000.000000000000000000
+    end
+    object Page1: TfrxReportPage
+      PaperWidth = 215.900000000000000000
+      PaperHeight = 279.400000000000000000
+      PaperSize = 1
+      LeftMargin = 10.000000000000000000
+      RightMargin = 10.000000000000000000
+      TopMargin = 10.000000000000000000
+      BottomMargin = 10.000000000000000000
+      object PageFooter1: TfrxPageFooter
+        Height = 37.795300000000000000
+        Top = 396.850650000000000000
+        Width = 740.409927000000000000
+        object Memo12: TfrxMemoView
+          Left = 514.016080000000000000
+          Top = 7.559059999999988000
+          Width = 204.094620000000000000
+          Height = 18.897650000000000000
+          ShowHint = False
+          Memo.UTF8W = (
+            'P'#225'gina: [Page#] de [TotalPages#]')
+        end
+      end
+      object MasterData1: TfrxMasterData
+        Height = 26.456710000000000000
+        Top = 309.921460000000000000
+        Width = 740.409927000000000000
+        DataSet = FrxUsuarios
+        DataSetName = 'ReporteUsuarios'
+        RowCount = 0
+        Stretched = True
+        object Memo2: TfrxMemoView
+          Left = 23.220470000000000000
+          Width = 79.370130000000000000
+          Height = 15.118120000000000000
+          ShowHint = False
+          StretchMode = smMaxHeight
+          DataSet = FrxUsuarios
+          DataSetName = 'ReporteUsuarios'
+          Font.Charset = DEFAULT_CHARSET
+          Font.Color = clBlack
+          Font.Height = -11
+          Font.Name = 'Arial'
+          Font.Style = []
+          Frame.Typ = [ftLeft, ftRight, ftTop, ftBottom]
+          Memo.UTF8W = (
+            '[ReporteUsuarios."codigorol"]')
+          ParentFont = False
+        end
+        object Memo3: TfrxMemoView
+          Left = 102.590600000000000000
+          Width = 143.622140000000000000
+          Height = 15.118120000000000000
+          ShowHint = False
+          StretchMode = smMaxHeight
+          Font.Charset = DEFAULT_CHARSET
+          Font.Color = clBlack
+          Font.Height = -11
+          Font.Name = 'Arial'
+          Font.Style = []
+          Frame.Typ = [ftLeft, ftRight, ftTop, ftBottom]
+          Memo.UTF8W = (
+            '[ReporteUsuarios."codigodepartamento"]')
+          ParentFont = False
+        end
+        object Memo5: TfrxMemoView
+          Left = 245.212740000000000000
+          Width = 158.740260000000000000
+          Height = 15.118120000000000000
+          ShowHint = False
+          StretchMode = smMaxHeight
+          Font.Charset = DEFAULT_CHARSET
+          Font.Color = clBlack
+          Font.Height = -11
+          Font.Name = 'Arial'
+          Font.Style = []
+          Frame.Typ = [ftRight, ftTop, ftBottom]
+          Memo.UTF8W = (
+            '[ReporteUsuarios."codigocargo"]')
+          ParentFont = False
+        end
+        object Memo10: TfrxMemoView
+          Left = 403.953000000000000000
+          Width = 151.181200000000000000
+          Height = 15.118120000000000000
+          ShowHint = False
+          StretchMode = smMaxHeight
+          Font.Charset = DEFAULT_CHARSET
+          Font.Color = clBlack
+          Font.Height = -11
+          Font.Name = 'Arial'
+          Font.Style = []
+          Frame.Typ = [ftLeft, ftRight, ftTop, ftBottom]
+          Memo.UTF8W = (
+            '[ReporteUsuarios."usuario"]')
+          ParentFont = False
+        end
+        object Memo8: TfrxMemoView
+          Left = 555.590910000000000000
+          Width = 158.740260000000000000
+          Height = 15.118120000000000000
+          ShowHint = False
+          StretchMode = smMaxHeight
+          Font.Charset = DEFAULT_CHARSET
+          Font.Color = clBlack
+          Font.Height = -11
+          Font.Name = 'Arial'
+          Font.Style = []
+          Frame.Typ = [ftRight, ftTop, ftBottom]
+          Memo.UTF8W = (
+            '[ReporteUsuarios."nombre"]')
+          ParentFont = False
+        end
+      end
+      object GroupHeader1: TfrxGroupHeader
+        Top = 287.244280000000000000
+        Width = 740.409927000000000000
+        Condition = 'ReporteUsuarios."idusuario"'
+      end
+      object Header1: TfrxHeader
+        Height = 34.015770000000010000
+        Top = 230.551330000000000000
+        Width = 740.409927000000000000
+        object Memo6: TfrxMemoView
+          Left = 22.677180000000000000
+          Top = 6.338590000000010000
+          Width = 79.370130000000000000
+          Height = 18.897650000000000000
+          ShowHint = False
+          Font.Charset = DEFAULT_CHARSET
+          Font.Color = clBlack
+          Font.Height = -13
+          Font.Name = 'Arial'
+          Font.Style = [fsBold]
+          Frame.Typ = [ftLeft, ftRight, ftTop, ftBottom]
+          Memo.UTF8W = (
+            'Rol:')
+          ParentFont = False
+        end
+        object Memo7: TfrxMemoView
+          Left = 102.047310000000000000
+          Top = 6.338590000000010000
+          Width = 143.622140000000000000
+          Height = 18.897650000000000000
+          ShowHint = False
+          Font.Charset = DEFAULT_CHARSET
+          Font.Color = clBlack
+          Font.Height = -13
+          Font.Name = 'Arial'
+          Font.Style = [fsBold]
+          Frame.Typ = [ftLeft, ftRight, ftTop, ftBottom]
+          Memo.UTF8W = (
+            'Departamento:')
+          ParentFont = False
+        end
+        object Memo9: TfrxMemoView
+          Left = 245.669450000000000000
+          Top = 6.338590000000010000
+          Width = 158.740260000000000000
+          Height = 18.897650000000000000
+          ShowHint = False
+          Font.Charset = DEFAULT_CHARSET
+          Font.Color = clBlack
+          Font.Height = -13
+          Font.Name = 'Arial'
+          Font.Style = [fsBold]
+          Frame.Typ = [ftLeft, ftRight, ftTop, ftBottom]
+          Memo.UTF8W = (
+            'Cargo:')
+          ParentFont = False
+        end
+        object Memo11: TfrxMemoView
+          Left = 404.409710000000000000
+          Top = 6.338590000000010000
+          Width = 151.181200000000000000
+          Height = 18.897650000000000000
+          ShowHint = False
+          Font.Charset = DEFAULT_CHARSET
+          Font.Color = clBlack
+          Font.Height = -13
+          Font.Name = 'Arial'
+          Font.Style = [fsBold]
+          Frame.Typ = [ftLeft, ftRight, ftTop, ftBottom]
+          Memo.UTF8W = (
+            'Usuario:')
+          ParentFont = False
+        end
+        object Line1: TfrxLineView
+          Left = 22.677180000000000000
+          Top = 31.236240000000010000
+          Width = 695.433520000000000000
+          ShowHint = False
+          Frame.Typ = [ftTop]
+        end
+        object Memo4: TfrxMemoView
+          Left = 555.590910000000000000
+          Top = 6.779529999999994000
+          Width = 162.519790000000000000
+          Height = 18.897650000000000000
+          ShowHint = False
+          Font.Charset = DEFAULT_CHARSET
+          Font.Color = clBlack
+          Font.Height = -13
+          Font.Name = 'Arial'
+          Font.Style = [fsBold]
+          Frame.Typ = [ftLeft, ftRight, ftTop, ftBottom]
+          Memo.UTF8W = (
+            'Nombre:')
+          ParentFont = False
+        end
+      end
+      object ReportTitle1: TfrxReportTitle
+        Height = 151.181200000000000000
+        Top = 18.897650000000000000
+        Width = 740.409927000000000000
+        object Memo1: TfrxMemoView
+          Left = 147.401670000000000000
+          Top = 45.354360000000000000
+          Width = 585.827150000000000000
+          Height = 34.015770000000010000
+          ShowHint = False
+          StretchMode = smActualHeight
+          Font.Charset = DEFAULT_CHARSET
+          Font.Color = clBlack
+          Font.Height = -27
+          Font.Name = 'Arial'
+          Font.Style = []
+          Frame.Typ = [ftLeft, ftRight, ftTop, ftBottom]
+          Memo.UTF8W = (
+            'Cat'#225'logo de usuarios')
+          ParentFont = False
+        end
+        object Memo13: TfrxMemoView
+          Left = 147.401670000000000000
+          Top = 7.559059999999999000
+          Width = 585.827150000000000000
+          Height = 37.795300000000000000
+          ShowHint = False
+          Font.Charset = DEFAULT_CHARSET
+          Font.Color = clBlack
+          Font.Height = -27
+          Font.Name = 'Arial'
+          Font.Style = [fsBold]
+          Frame.Typ = [ftLeft, ftRight, ftTop, ftBottom]
+          Memo.UTF8W = (
+            'Reporte General')
+          ParentFont = False
+        end
+        object Memo14: TfrxMemoView
+          Left = 147.401670000000000000
+          Top = 78.708720000000000000
+          Width = 585.827150000000000000
+          Height = 22.677180000000000000
+          ShowHint = False
+          Font.Charset = DEFAULT_CHARSET
+          Font.Color = clBlack
+          Font.Height = -17
+          Font.Name = 'Arial'
+          Font.Style = [fsBold]
+          Frame.Typ = [ftLeft, ftRight, ftBottom]
+          HAlign = haRight
+          Memo.UTF8W = (
+            '[FormatDateTime('#39'dd,mmm,yyyy'#39',Date)]')
+          ParentFont = False
+        end
+        object Memo15: TfrxMemoView
+          Left = 147.401670000000000000
+          Top = 100.724490000000000000
+          Width = 585.827150000000000000
+          Height = 22.677180000000000000
+          ShowHint = False
+          Font.Charset = DEFAULT_CHARSET
+          Font.Color = clBlack
+          Font.Height = -17
+          Font.Name = 'Arial'
+          Font.Style = [fsBold]
+          Frame.Typ = [ftLeft, ftRight, ftBottom]
+          HAlign = haRight
+          Memo.UTF8W = (
+            'Ciudad del Carmen, Campeche')
+          ParentFont = False
+        end
+        object Picture1: TfrxPictureView
+          Left = 11.338590000000000000
+          Top = 7.559059999999999000
+          Width = 128.504020000000000000
+          Height = 117.165430000000000000
+          ShowHint = False
+          DataField = 'imagen1'
+          DataSet = Form2.FrxImagen
+          DataSetName = 'ReporteImagen'
+          Frame.Typ = [ftLeft, ftRight, ftTop, ftBottom]
+          KeepAspectRatio = False
+          HightQuality = False
+          Transparent = False
+          TransparentColor = clWhite
+        end
+      end
+    end
+  end
+  object cdImagenPrev: TClientDataSet
+    Aggregates = <>
+    Params = <>
+    ReadOnly = True
+    RemoteServer = ClientModule1.DSProviderConnection1
+    Left = 102
+    Top = 216
+  end
+  object dsimagen: TDataSource
+    DataSet = cdImagenPrev
+    Left = 96
+    Top = 264
+  end
+  object mdImagenPrev: TJvMemoryData
+    Active = True
+    FieldDefs = <
+      item
+        Name = 'imagen'
+        DataType = ftBlob
+      end
+      item
+        Name = 'idpersonal'
+        DataType = ftInteger
+      end>
+    Left = 96
+    Top = 168
+    object mdImagenPrevimagen: TBlobField
+      FieldName = 'imagen'
+    end
+    object mdImagenPrevidpersonal: TIntegerField
+      FieldName = 'idpersonal'
+    end
+  end
+end

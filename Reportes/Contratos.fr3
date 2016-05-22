@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<TfrxReport Version="4.10.3" DotMatrixReport="False" IniFile="\Software\Fast Reports" PreviewOptions.Buttons="4095" PreviewOptions.Zoom="1" PrintOptions.Printer="Por defecto" PrintOptions.PrintOnSheet="0" ReportOptions.CreateDate="40938.8237102083" ReportOptions.Description.Text="" ReportOptions.LastChange="40942.9438778472" ScriptLanguage="PascalScript" ScriptText.Text="begin&#13;&#10;&#13;&#10;end." PropData="044C65667403F8010844617461736574730101063620446174615365743D22467278436F6E747261746F732220446174615365744E616D653D225265706F727465436F6E747261746F73220000095661726961626C65730100055374796C650100">
+  <TfrxDataPage Name="Data" Height="1000" Left="0" Top="0" Width="1000"/>
+  <TfrxReportPage Name="Page1" PaperWidth="215.9" PaperHeight="279.4" PaperSize="1" LeftMargin="10" RightMargin="10" TopMargin="10" BottomMargin="10" ColumnWidth="0" ColumnPositions.Text="" HGuides.Text="" VGuides.Text="">
+    <TfrxPageFooter Name="PageFooter1" Height="37.7953" Left="0" Top="400.63018" Width="740.409927">
+      <TfrxMemoView Name="Memo12" Left="574.48856" Top="0" Width="128.50402" Height="18.89765" ShowHint="False" Text="Página: [&#60;Page&#62;] "/>
+    </TfrxPageFooter>
+    <TfrxMasterData Name="MasterData1" Height="22.67718" Left="0" Top="317.48052" Width="740.409927" ColumnWidth="0" ColumnGap="0" DataSet="FrxContratos" DataSetName="ReporteContratos" RowCount="0">
+      <TfrxMemoView Name="Memo2" Left="7.10235" Top="0" Width="64.25201" Height="15.11812" ShowHint="False" DataSet="FrxContratos" DataSetName="ReporteContratos" Font.Charset="1" Font.Color="0" Font.Height="-11" Font.Name="Arial" Font.Style="0" ParentFont="False" Text="[ReporteContratos.&#34;codigoprincipal&#34;]"/>
+      <TfrxMemoView Name="Memo3" Left="260.33086" Top="0" Width="139.84261" Height="15.11812" ShowHint="False" DataSet="FrxContratos" DataSetName="ReporteContratos" Font.Charset="1" Font.Color="0" Font.Height="-11" Font.Name="Arial" Font.Style="0" ParentFont="False" Text="[ReporteContratos.&#34;tituloprincipal&#34;]"/>
+      <TfrxMemoView Name="Memo5" Left="415.29159" Top="0" Width="151.1812" Height="15.11812" ShowHint="False" DataSet="FrxContratos" DataSetName="ReporteContratos" Font.Charset="1" Font.Color="0" Font.Height="-11" Font.Name="Arial" Font.Style="0" ParentFont="False" Text="[ReporteContratos.&#34;descripcion&#34;]"/>
+      <TfrxMemoView Name="Memo10" Left="577.81138" Top="0" Width="147.40167" Height="15.11812" ShowHint="False" DataSet="FrxContratos" DataSetName="ReporteContratos" Font.Charset="1" Font.Color="0" Font.Height="-11" Font.Name="Arial" Font.Style="0" ParentFont="False" Text="[ReporteContratos.&#34;comentarios&#34;]"/>
+      <TfrxMemoView Name="Memo19" Left="83.14966" Top="0" Width="79.37013" Height="15.11812" ShowHint="False" DataSet="FrxContratos" DataSetName="ReporteContratos" Font.Charset="1" Font.Color="0" Font.Height="-11" Font.Name="Arial" Font.Style="0" ParentFont="False" Text="[ReporteContratos.&#34;cantidad&#34;]"/>
+      <TfrxLineView Name="Line2" Left="11.33859" Top="18.89765" Width="718.1107" Height="0" ShowHint="False" Frame.Typ="4"/>
+      <TfrxMemoView Name="Memo8" Left="170.07885" Top="0" Width="79.37013" Height="15.11812" ShowHint="False" DataSet="FrxContratos" DataSetName="ReporteContratos" Font.Charset="1" Font.Color="0" Font.Height="-11" Font.Name="Arial" Font.Style="0" ParentFont="False" Text="[ReporteContratos.&#34;costo&#34;]"/>
+    </TfrxMasterData>
+    <TfrxGroupHeader Name="GroupHeader1" Height="0" Left="0" Top="294.80334" Width="740.409927" Condition="ReporteContratos.&#34;idprincipal&#34;"/>
+    <TfrxHeader Name="Header1" Height="34.01577" Left="0" Top="238.11039" Width="740.409927">
+      <TfrxMemoView Name="Memo6" Left="11.33859" Top="11.33859" Width="56.69295" Height="15.11812" ShowHint="False" Font.Charset="1" Font.Color="0" Font.Height="-13" Font.Name="Arial" Font.Style="1" ParentFont="False" Text="Código:"/>
+      <TfrxMemoView Name="Memo7" Left="261.5671" Top="15.11812" Width="52.91342" Height="15.11812" ShowHint="False" Font.Charset="1" Font.Color="0" Font.Height="-13" Font.Name="Arial" Font.Style="1" ParentFont="False" Text="Título:"/>
+      <TfrxMemoView Name="Memo9" Left="416.86642" Top="11.33859" Width="86.92919" Height="15.11812" ShowHint="False" Font.Charset="1" Font.Color="0" Font.Height="-13" Font.Name="Arial" Font.Style="1" ParentFont="False" Text="Descripción:"/>
+      <TfrxMemoView Name="Memo11" Left="585.82715" Top="11.33859" Width="90.70872" Height="15.11812" ShowHint="False" Font.Charset="1" Font.Color="0" Font.Height="-13" Font.Name="Arial" Font.Style="1" ParentFont="False" Text="Comentarios:"/>
+      <TfrxMemoView Name="Memo18" Left="94.48825" Top="11.33859" Width="64.25201" Height="15.11812" ShowHint="False" Font.Charset="1" Font.Color="0" Font.Height="-13" Font.Name="Arial" Font.Style="1" ParentFont="False" Text="Cantidad:"/>
+      <TfrxLineView Name="Line1" Left="7.55906" Top="30.01577" Width="718.1107" Height="0" ShowHint="False" Frame.Typ="4"/>
+      <TfrxMemoView Name="Memo4" Left="177.63791" Top="11.33859" Width="49.13389" Height="15.11812" ShowHint="False" Font.Charset="1" Font.Color="0" Font.Height="-13" Font.Name="Arial" Font.Style="1" ParentFont="False" Text="Costo:"/>
+    </TfrxHeader>
+    <TfrxReportTitle Name="ReportTitle1" Height="158.74026" Left="0" Top="18.89765" Width="740.409927">
+      <TfrxMemoView Name="Memo1" Left="192.75603" Top="45.35436" Width="336.37817" Height="34.01577" ShowHint="False" StretchMode="smActualHeight" Font.Charset="1" Font.Color="0" Font.Height="-27" Font.Name="Arial" Font.Style="0" HAlign="haCenter" ParentFont="False" Text="Catálogo de Contratos"/>
+      <TfrxMemoView Name="Memo13" Left="245.66945" Top="15.11812" Width="219.21274" Height="37.7953" ShowHint="False" Font.Charset="1" Font.Color="0" Font.Height="-27" Font.Name="Arial" Font.Style="1" HAlign="haCenter" ParentFont="False" Text="Reporte General"/>
+      <TfrxMemoView Name="Memo14" Left="366.61441" Top="90.70872" Width="366.61441" Height="22.67718" ShowHint="False" Font.Charset="1" Font.Color="0" Font.Height="-17" Font.Name="Arial" Font.Style="1" HAlign="haRight" ParentFont="False" Text="[FormatDateTime('dd,mmm,yyyy',Date)]"/>
+      <TfrxMemoView Name="Memo15" Left="366.61441" Top="116.72449" Width="366.61441" Height="22.67718" ShowHint="False" Font.Charset="1" Font.Color="0" Font.Height="-17" Font.Name="Arial" Font.Style="1" HAlign="haRight" ParentFont="False" Text="Ciudad del Carmen, Campeche"/>
+    </TfrxReportTitle>
+  </TfrxReportPage>
+</TfrxReport>

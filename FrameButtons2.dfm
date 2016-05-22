@@ -1,0 +1,51 @@
+object FrameButton2: TFrameButton2
+  Left = 0
+  Top = 0
+  Width = 166
+  Height = 39
+  Align = alBottom
+  AutoSize = True
+  TabOrder = 0
+  ExplicitWidth = 162
+  object Panel1: TPanel
+    Left = 0
+    Top = 0
+    Width = 166
+    Height = 39
+    Align = alClient
+    Padding.Left = 6
+    Padding.Top = 4
+    Padding.Right = 6
+    Padding.Bottom = 4
+    TabOrder = 0
+    ExplicitLeft = -8
+    ExplicitWidth = 185
+    object BitBtn1: TBitBtn
+      Left = 9
+      Top = 5
+      Width = 75
+      Height = 29
+      Align = alRight
+      DoubleBuffered = True
+      Kind = bkOK
+      NumGlyphs = 2
+      ParentDoubleBuffered = False
+      TabOrder = 0
+    end
+    object BitBtn2: TBitBtn
+      Left = 84
+      Top = 5
+      Width = 75
+      Height = 29
+      Align = alRight
+      Caption = 'Cancelar'
+      DoubleBuffered = True
+      Kind = bkCancel
+      NumGlyphs = 2
+      ParentDoubleBuffered = False
+      TabOrder = 1
+      ExplicitLeft = 81
+      ExplicitTop = 8
+    end
+  end
+end

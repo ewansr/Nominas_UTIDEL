@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<TfrxReport Version="4.10.3" DotMatrixReport="False" IniFile="\Software\Fast Reports" PreviewOptions.Buttons="4095" PreviewOptions.Zoom="1" PrintOptions.Printer="Por defecto" PrintOptions.PrintOnSheet="0" ReportOptions.CreateDate="41661.9005845833" ReportOptions.Description.Text="" ReportOptions.LastChange="41662.6220628935" ScriptLanguage="PascalScript" ScriptText.Text="&#13;&#10;begin&#13;&#10;&#13;&#10;end." PropData="044C656674027803546F7002080844617461736574730101063820446174615365743D224644534E6F6D696E61506F6C697A612220446174615365744E616D653D224644534E6F6D696E61506F6C697A61220001063820446174615365743D224644534F7267616E697A6163696F6E2220446174615365744E616D653D224644534F7267616E697A6163696F6E220001062C20446174615365743D22667278506F6C697A612220446174615365744E616D653D22667278506F6C697A61220000095661726961626C65730100055374796C650100">
+  <TfrxDataPage Name="Data" Height="1000" Left="0" Top="0" Width="1000"/>
+  <TfrxReportPage Name="Page1" PaperWidth="215.9" PaperHeight="279.4" PaperSize="1" LeftMargin="10" RightMargin="10" TopMargin="10" BottomMargin="10" ColumnWidth="0" ColumnPositions.Text="" HGuides.Text="" VGuides.Text="">
+    <TfrxPageHeader Name="PageHeader1" Height="75.5906" Left="0" Top="18.89765" Width="740.409927">
+      <TfrxMemoView Name="Memo4" Left="0" Top="0" Width="740.78788" Height="18.89765" ShowHint="False" Font.Charset="1" Font.Color="0" Font.Height="-16" Font.Name="Arial" Font.Style="1" HAlign="haCenter" ParentFont="False" Text="[FDSOrganizacion.&#34;NombreOrganizacion&#34;]"/>
+      <TfrxMemoView Name="Memo6" Left="702.99258" Top="0" Width="30.23624" Height="11.33859" ShowHint="False" Font.Charset="1" Font.Color="0" Font.Height="-9" Font.Name="Arial" Font.Style="0" HAlign="haCenter" ParentFont="False" Text="[Page#]"/>
+      <TfrxMemoView Name="Memo7" Left="661.41775" Top="0" Width="41.57483" Height="11.33859" ShowHint="False" Font.Charset="1" Font.Color="0" Font.Height="-9" Font.Name="Arial" Font.Style="0" HAlign="haRight" ParentFont="False" Text="Hoja:"/>
+      <TfrxMemoView Name="Memo8" Left="536.69326" Top="11.33859" Width="200.31509" Height="11.33859" ShowHint="False" Font.Charset="1" Font.Color="0" Font.Height="-9" Font.Name="Arial" Font.Style="0" HAlign="haRight" ParentFont="False" Text="Fecha: [&#60;Date&#62;]"/>
+      <TfrxMemoView Name="Memo11" Left="0" Top="22.67718" Width="737.00835" Height="26.45671" ShowHint="False" Font.Charset="1" Font.Color="0" Font.Height="-12" Font.Name="Arial" Font.Style="1" HAlign="haCenter" ParentFont="False" Text="Rubros incompletos del Periodo  [FDSNominaPoliza.&#34;FechaNomina&#34;] al [FDSNominaPoliza.&#34;FechaTerminoNomina&#34;]"/>
+      <TfrxMemoView Name="Memo5" Left="0" Top="49.13389" Width="737.00835" Height="26.45671" ShowHint="False" Font.Charset="1" Font.Color="0" Font.Height="-12" Font.Name="Arial" Font.Style="1" HAlign="haCenter" ParentFont="False" Text="NO ES POSIBLE GENERAR LA POLIZA CONTABLE"/>
+    </TfrxPageHeader>
+    <TfrxHeader Name="Header1" Height="20.69295" Left="0" Top="154.96073" Width="740.409927">
+      <TfrxMemoView Name="Memo12" Left="3.77953" Top="3.77952999999999" Width="68.03154" Height="15.11812" ShowHint="False" Font.Charset="1" Font.Color="0" Font.Height="-12" Font.Name="Arial" Font.Style="1" ParentFont="False" Text="No."/>
+      <TfrxMemoView Name="Memo16" Left="86.92919" Top="3.77952999999999" Width="207.87415" Height="15.11812" ShowHint="False" Font.Charset="1" Font.Color="0" Font.Height="-12" Font.Name="Arial" Font.Style="1" ParentFont="False" Text="C l a v e"/>
+      <TfrxMemoView Name="Memo23" Left="0" Top="20.69295" Width="737.00835" Height="0" ShowHint="False" Font.Charset="1" Font.Color="0" Font.Height="-13" Font.Name="Arial" Font.Style="0" Frame.Typ="8" ParentFont="False" Text=""/>
+      <TfrxMemoView Name="Memo24" Left="0" Top="1.22047000000003" Width="737.00835" Height="0" ShowHint="False" Font.Charset="1" Font.Color="0" Font.Height="-12" Font.Name="Arial" Font.Style="1" Frame.Typ="8" ParentFont="False" Text=""/>
+      <TfrxMemoView Name="Memo1" Left="302.3624" Top="3.77952999999999" Width="438.42548" Height="15.11812" ShowHint="False" Font.Charset="1" Font.Color="0" Font.Height="-12" Font.Name="Arial" Font.Style="1" ParentFont="False" Text="C o m e n t a r i o"/>
+    </TfrxHeader>
+    <TfrxMasterData Name="MasterData1" Height="22.67718" Left="0" Top="200.31509" Width="740.409927" ColumnWidth="0" ColumnGap="0" DataSet="frxPoliza" DataSetName="frxPoliza" RowCount="0">
+      <TfrxMemoView Name="Memo2" Left="86.92919" Top="0" Width="207.87415" Height="18.89765" ShowHint="False" DataField="Clave" DataSet="frxPoliza" DataSetName="frxPoliza" Font.Charset="1" Font.Color="0" Font.Height="-11" Font.Name="Arial" Font.Style="0" ParentFont="False" Text="[frxPoliza.&#34;Clave&#34;]"/>
+      <TfrxMemoView Name="Line" Left="3.77953" Top="0" Width="68.03154" Height="18.89765" ShowHint="False" Font.Charset="1" Font.Color="0" Font.Height="-11" Font.Name="Arial" Font.Style="0" ParentFont="False" Text="[Line#]"/>
+      <TfrxMemoView Name="frxPolizaComentario" Left="302.3624" Top="0" Width="434.64595" Height="18.89765" ShowHint="False" DataField="Comentario" DataSet="frxPoliza" DataSetName="frxPoliza" Text="[frxPoliza.&#34;Comentario&#34;]"/>
+    </TfrxMasterData>
+    <TfrxFooter Name="Footer1" Height="37.7953" Left="0" Top="245.66945" Width="740.409927">
+      <TfrxMemoView Name="Memo9" Left="41.57483" Top="7.55905999999999" Width="661.41775" Height="30.23624" ShowHint="False" Font.Charset="1" Font.Color="0" Font.Height="-11" Font.Name="Arial" Font.Style="0" HAlign="haCenter" ParentFont="False" Text="*Comuniquese con el departamento de contabilidad para que te indiquen el (los) número (s) de cuenta que le corresponde (n) a esto (s) rubro(s)."/>
+    </TfrxFooter>
+  </TfrxReportPage>
+</TfrxReport>

@@ -1,0 +1,93 @@
+inherited FrmDatosViaEmbarque: TFrmDatosViaEmbarque
+  Caption = 'V'#237'a de embarque'
+  ClientHeight = 224
+  ClientWidth = 458
+  ExplicitWidth = 474
+  ExplicitHeight = 262
+  PixelsPerInch = 96
+  TextHeight = 13
+  inherited PanelBarraLugar: TPanel
+    Top = 175
+    Width = 458
+    ExplicitTop = 175
+    ExplicitWidth = 458
+  end
+  inherited PanelDatosLugares: TPanel
+    Width = 458
+    Height = 175
+    ExplicitWidth = 458
+    ExplicitHeight = 175
+    object lbl1: TJvLabel
+      Left = 24
+      Top = 77
+      Width = 60
+      Height = 13
+      Caption = 'Descripci'#243'n:'
+      Transparent = True
+      HotTrackFont.Charset = DEFAULT_CHARSET
+      HotTrackFont.Color = clWindowText
+      HotTrackFont.Height = -11
+      HotTrackFont.Name = 'Tahoma'
+      HotTrackFont.Style = []
+    end
+    object edtcodigoviaembarque: TDBAdvEdit
+      Left = 104
+      Top = 24
+      Width = 137
+      Height = 21
+      LabelCaption = 'C'#243'digo:'
+      LabelPosition = lpLeftCenter
+      LabelMargin = 6
+      LabelTransparent = True
+      LabelFont.Charset = DEFAULT_CHARSET
+      LabelFont.Color = clWindowText
+      LabelFont.Height = -11
+      LabelFont.Name = 'Tahoma'
+      LabelFont.Style = []
+      Lookup.Separator = ';'
+      CharCase = ecUpperCase
+      Color = clWindow
+      Enabled = True
+      TabOrder = 0
+      Text = 'EDT1'
+      Visible = True
+      Version = '2.9.0.0'
+      DataField = 'codigoviaembarque'
+      DataSource = dsDatos
+    end
+    object edttituloviaembarque: TDBAdvEdit
+      Left = 104
+      Top = 51
+      Width = 337
+      Height = 21
+      LabelCaption = 'T'#237'tulo:'
+      LabelPosition = lpLeftCenter
+      LabelMargin = 6
+      LabelTransparent = True
+      LabelFont.Charset = DEFAULT_CHARSET
+      LabelFont.Color = clWindowText
+      LabelFont.Height = -11
+      LabelFont.Name = 'Tahoma'
+      LabelFont.Style = []
+      Lookup.Separator = ';'
+      CharCase = ecUpperCase
+      Color = clWindow
+      Enabled = True
+      TabOrder = 1
+      Text = 'EDT1'
+      Visible = True
+      Version = '2.9.0.0'
+      DataField = 'tituloviaembarque'
+      DataSource = dsDatos
+    end
+    object memdescripcion: TDBMemo
+      Left = 24
+      Top = 96
+      Width = 417
+      Height = 65
+      DataField = 'descripcion'
+      DataSource = dsDatos
+      TabOrder = 2
+    end
+  end
+end

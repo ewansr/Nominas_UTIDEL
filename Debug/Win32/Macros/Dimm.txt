@@ -1,0 +1,38 @@
+Sub Multivaluados()
+
+  Dim Cadena As String
+  Dim Counter As Integer
+  Dim incFila As Integer
+  
+  Dim newBook As Workbook
+  Dim newSheet As Worksheet
+  Dim name As String
+   
+  incFila = 4
+  
+  Cells(incFila, 1).Select
+  Do Until IsEmpty(ActiveCell)
+    Cadena = ""
+
+    For Counter = 1 To 134
+      Cells(incFila, Counter).Select
+      Cadena = Cadena & ActiveCell.Value & "|"
+    Next Counter
+    
+    Cells(incFila, Counter + 2).Value = Cadena
+    
+    incFila = incFila + 1
+    ActiveCell.Offset(1, 0).Select
+  Loop
+                
+  Columns("EG:EG").Select
+    Selection.Copy
+    Sheets.Add After:=ActiveSheet
+    Sheets("Hoja2").Select
+    Sheets("Hoja2").name = "MULTIVALUADOS"
+    ActiveSheet.Paste
+    Rows("1:3").Select
+    Application.CutCopyMode = False
+    Selection.Delete Shift:=xlUp
+
+ End Sub

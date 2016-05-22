@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<TfrxReport Version="4.10.3" DotMatrixReport="False" IniFile="\Software\Fast Reports" PreviewOptions.Buttons="4095" PreviewOptions.Zoom="1" PrintOptions.Printer="Por defecto" PrintOptions.PrintOnSheet="0" ReportOptions.CreateDate="40938.8237102083" ReportOptions.Description.Text="" ReportOptions.LastChange="40981.6658016782" ScriptLanguage="PascalScript" ScriptText.Text="begin&#13;&#10;&#13;&#10;end." PropData="044C65667403F8010844617461736574730101063C20446174615365743D22467278436E664669726D616E7465732220446174615365744E616D653D225265706F727465436E664669726D616E746573220001063620446174615365743D22466F726D322E467278496D6167656E2220446174615365744E616D653D225265706F727465496D6167656E220000095661726961626C65730100055374796C650100">
+  <TfrxDataPage Name="Data" Height="1000" Left="0" Top="0" Width="1000"/>
+  <TfrxReportPage Name="Page1" PaperWidth="215.9" PaperHeight="279.4" PaperSize="1" LeftMargin="10" RightMargin="10" TopMargin="10" BottomMargin="10" ColumnWidth="0" ColumnPositions.Text="" HGuides.Text="" VGuides.Text="">
+    <TfrxPageFooter Name="PageFooter1" Height="37.7953" Left="0" Top="404.40971" Width="740.409927">
+      <TfrxMemoView Name="Memo12" Left="514.01608" Top="7.55905999999999" Width="204.09462" Height="18.89765" ShowHint="False" Text="Página: [Page#] de [TotalPages#]"/>
+    </TfrxPageFooter>
+    <TfrxMasterData Name="MasterData1" Height="15.11812" Left="0" Top="328.81911" Width="740.409927" ColumnWidth="0" ColumnGap="0" DataSet="FrxCnfFirmantes" DataSetName="ReporteCnfFirmantes" RowCount="0" Stretched="True">
+      <TfrxMemoView Name="Memo2" Left="23.22047" Top="0" Width="147.40167" Height="15.11812" ShowHint="False" StretchMode="smMaxHeight" DataSet="FrxCnfFirmantes" DataSetName="ReporteCnfFirmantes" Font.Charset="1" Font.Color="0" Font.Height="-11" Font.Name="Arial" Font.Style="0" Frame.Typ="15" ParentFont="False" Text="[ReporteCnfFirmantes.&#34;nombredocumento&#34;]"/>
+      <TfrxMemoView Name="Memo3" Left="170.84261" Top="0" Width="332.59864" Height="15.11812" ShowHint="False" StretchMode="smMaxHeight" DataSet="FrxCnfFirmantes" DataSetName="ReporteCnfFirmantes" Font.Charset="1" Font.Color="0" Font.Height="-11" Font.Name="Arial" Font.Style="0" Frame.Typ="14" ParentFont="False" Text="[ReporteCnfFirmantes.&#34;titulocargo&#34;]"/>
+      <TfrxMemoView Name="Memo5" Left="502.22078" Top="0" Width="215.43321" Height="15.11812" ShowHint="False" StretchMode="smMaxHeight" DataSet="FrxCnfFirmantes" DataSetName="ReporteCnfFirmantes" Font.Charset="1" Font.Color="0" Font.Height="-11" Font.Name="Arial" Font.Style="0" Frame.Typ="14" ParentFont="False" Text="[ReporteCnfFirmantes.&#34;fecha&#34;]"/>
+    </TfrxMasterData>
+    <TfrxGroupHeader Name="GroupHeader1" Height="18.89765" Left="0" Top="287.24428" Width="740.409927" Condition="ReporteCnfFirmantes.&#34;idconfiguracionfirmante&#34;">
+      <TfrxMemoView Name="Memo4" Left="22.67718" Top="3.77953000000002" Width="147.40167" Height="15.11812" ShowHint="False" StretchMode="smMaxHeight" DataSet="FrxCnfFirmantes" DataSetName="ReporteCnfFirmantes" Font.Charset="1" Font.Color="0" Font.Height="-11" Font.Name="Arial" Font.Style="0" Frame.Typ="15" ParentFont="False" Text="Organización:"/>
+      <TfrxMemoView Name="Memo10" Left="170.07885" Top="3.77953000000002" Width="548.03185" Height="15.11812" ShowHint="False" StretchMode="smMaxHeight" DataSet="FrxCnfFirmantes" DataSetName="ReporteCnfFirmantes" Font.Charset="1" Font.Color="0" Font.Height="-11" Font.Name="Arial" Font.Style="0" Frame.Typ="15" ParentFont="False" Text="[ReporteCnfFirmantes.&#34;codigoorganizacion&#34;]"/>
+    </TfrxGroupHeader>
+    <TfrxHeader Name="Header1" Height="34.01577" Left="0" Top="230.55133" Width="740.409927">
+      <TfrxMemoView Name="Memo6" Left="22.67718" Top="6.33859000000001" Width="147.40167" Height="18.89765" ShowHint="False" Font.Charset="1" Font.Color="0" Font.Height="-13" Font.Name="Arial" Font.Style="1" Frame.Typ="15" ParentFont="False" Text="Documento:"/>
+      <TfrxMemoView Name="Memo7" Left="170.07885" Top="6.33859000000001" Width="332.59864" Height="18.89765" ShowHint="False" Font.Charset="1" Font.Color="0" Font.Height="-13" Font.Name="Arial" Font.Style="1" Frame.Typ="15" ParentFont="False" Text="Cargo:"/>
+      <TfrxMemoView Name="Memo9" Left="502.67749" Top="6.33859000000001" Width="215.43321" Height="18.89765" ShowHint="False" Font.Charset="1" Font.Color="0" Font.Height="-13" Font.Name="Arial" Font.Style="1" Frame.Typ="15" ParentFont="False" Text="Fecha:"/>
+      <TfrxLineView Name="Line1" Left="22.67718" Top="31.23624" Width="695.43352" Height="0" ShowHint="False" Frame.Typ="4"/>
+    </TfrxHeader>
+    <TfrxReportTitle Name="ReportTitle1" Height="151.1812" Left="0" Top="18.89765" Width="740.409927">
+      <TfrxMemoView Name="Memo1" Left="147.40167" Top="45.35436" Width="585.82715" Height="34.01577" ShowHint="False" StretchMode="smActualHeight" Font.Charset="1" Font.Color="0" Font.Height="-27" Font.Name="Arial" Font.Style="0" Frame.Typ="15" ParentFont="False" Text="Configuracion de firmantes"/>
+      <TfrxMemoView Name="Memo13" Left="147.40167" Top="7.55906" Width="585.82715" Height="37.7953" ShowHint="False" Font.Charset="1" Font.Color="0" Font.Height="-27" Font.Name="Arial" Font.Style="1" Frame.Typ="15" ParentFont="False" Text="Reporte General"/>
+      <TfrxMemoView Name="Memo14" Left="147.40167" Top="78.70872" Width="585.82715" Height="22.67718" ShowHint="False" Font.Charset="1" Font.Color="0" Font.Height="-17" Font.Name="Arial" Font.Style="1" Frame.Typ="11" HAlign="haRight" ParentFont="False" Text="[FormatDateTime('dd,mmm,yyyy',Date)]"/>
+      <TfrxMemoView Name="Memo15" Left="147.40167" Top="100.72449" Width="585.82715" Height="22.67718" ShowHint="False" Font.Charset="1" Font.Color="0" Font.Height="-17" Font.Name="Arial" Font.Style="1" Frame.Typ="11" HAlign="haRight" ParentFont="False" Text="Ciudad del Carmen, Campeche"/>
+      <TfrxPictureView Name="Picture1" Left="11.33859" Top="7.55906" Width="128.50402" Height="117.16543" ShowHint="False" DataField="imagen1" DataSet="Form2.FrxImagen" DataSetName="ReporteImagen" Frame.Typ="15" KeepAspectRatio="False" HightQuality="False" Transparent="False" TransparentColor="16777215"/>
+    </TfrxReportTitle>
+  </TfrxReportPage>
+</TfrxReport>
