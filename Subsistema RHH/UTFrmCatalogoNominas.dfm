@@ -1661,7 +1661,6 @@ object FrmCatalogoNominas: TFrmCatalogoNominas
     TabStop = False
     OnTabChanged = DxRibbonNominasTabChanged
     object dxTabProceso: TdxRibbonTab
-      Active = True
       Caption = 'C'#225'lculo de N'#243'minas'
       Groups = <
         item
@@ -1687,6 +1686,7 @@ object FrmCatalogoNominas: TFrmCatalogoNominas
       Index = 1
     end
     object dxTabPersonal: TdxRibbonTab
+      Active = True
       Caption = 'Opciones de Personal'
       Groups = <
         item
@@ -21674,6 +21674,7 @@ object FrmCatalogoNominas: TFrmCatalogoNominas
     Top = 472
   end
   object AdvSpopupAyuda: TAdvSmoothPopup
+    FormStyle = fsStayOnTop
     ShadowColor = 15784647
     ShadowIntensity = 0.900000000000000000
     Color = 15784647

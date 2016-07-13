@@ -263,7 +263,7 @@ begin
 
     if (chkboxTimbrar.Checked) and (InteliDialog.ShowModal('Aviso', 'Esta seguro que desea timbrar este tipo de Nómina[]', mtInformation, [mbyes, mbNo], 0) = mrYes) then
     begin
-      if cbbBancos.ItemIndex = -1 then
+      if (not soloTimbrar) and (cbbBancos.ItemIndex = -1) then
         raise InteligentException.CreateByCode(18, ['Bancos']);
       if (chkboxGastos.Checked) and (cbbGastos.ItemIndex = -1) then
         raise InteligentException.CreateByCode(18, ['Gastos']);
@@ -642,6 +642,15 @@ begin
         pnlOrganizacion.Visible := Form2.cdConfiguracionAcceso.FieldByName('SelOrgTimbre').asString = 'Si';
         CargarOrganizacionesTimbre;
       end;
+
+
+//      cbbReferencia.Visible := Not soloTimbrar;
+//      cbbBancos.Visible := Not soloTimbrar;
+//      jvlbl1.Visible := Not soloTimbrar;
+//      LBL1.Visible := Not soloTimbrar;
+        GroupBox2.Visible := not soloTimbrar;
+
+
     finally
       parametros3.Destroy;
       parametros2.Destroy;
@@ -834,8 +843,8 @@ begin
               Empleado.ComplementoNomina.NumeroSeguridadSocial := cdPersonalIncluido.FieldByName('NumeroSeguroSocial').AsString;
               Empleado.ComplementoNomina.Departamento := cdPersonalIncluido.FieldByName('TituloDepartamento').AsString;
     //****REVISAR LA PARTE DE LOS BANCOS ****////////////////////////
-              (*Empleado.ComplementoNomina.Banco := 2; //pendiente
-              //Empleado.ComplementoNomina.ClabeBancaria := '0000000000';//pendiente  *)
+              //Empleado.ComplementoNomina.Banco := cdPersonalIncluido.FieldByName('Clavebanco').AsInteger; //pendiente
+              Empleado.ComplementoNomina.ClabeBancaria := cdPersonalIncluido.FieldByName('Clabe').AsString;
               Empleado.ComplementoNomina.Banco := cdPersonalIncluido.FieldByName('ClaveBanco').AsInteger; //pendiente
               //Empleado.ComplementoNomina.ClabeBancaria := '0000000000';//pendiente
               Empleado.ComplementoNomina.FechaInicioLabores := StrToDate(cdPersonalIncluido.FieldByName('FechaReingreso').AsString);

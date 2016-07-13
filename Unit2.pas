@@ -3225,8 +3225,13 @@ begin
               End;
               Result := True;
             Except
-              Formulario.Free;
-              Result := false;
+              on e: exception do
+              begin
+                ShowMessage(e.Message);
+
+                Formulario.Free;
+                Result := false;
+              end;
             End;
           End
           Else
