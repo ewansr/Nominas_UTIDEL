@@ -1661,6 +1661,7 @@ object FrmCatalogoNominas: TFrmCatalogoNominas
     TabStop = False
     OnTabChanged = DxRibbonNominasTabChanged
     object dxTabProceso: TdxRibbonTab
+      Active = True
       Caption = 'C'#225'lculo de N'#243'minas'
       Groups = <
         item
@@ -1686,7 +1687,6 @@ object FrmCatalogoNominas: TFrmCatalogoNominas
       Index = 1
     end
     object dxTabPersonal: TdxRibbonTab
-      Active = True
       Caption = 'Opciones de Personal'
       Groups = <
         item
@@ -5015,7 +5015,7 @@ object FrmCatalogoNominas: TFrmCatalogoNominas
     PrintOptions.Printer = 'Por defecto'
     PrintOptions.PrintOnSheet = 0
     ReportOptions.CreateDate = 41536.577245775500000000
-    ReportOptions.LastChange = 42199.586571354200000000
+    ReportOptions.LastChange = 42214.402401122700000000
     ScriptLanguage = 'PascalScript'
     ScriptText.Strings = (
       'procedure Memo15OnBeforePrint(Sender: TfrxComponent);'
@@ -5149,9 +5149,9 @@ object FrmCatalogoNominas: TFrmCatalogoNominas
           VAlign = vaCenter
         end
         object Memo13: TfrxMemoView
-          Top = 68.031540000000010000
+          Top = 68.031540000000000000
           Width = 506.457020000000000000
-          Height = 34.015770000000010000
+          Height = 34.015770000000000000
           ShowHint = False
           StretchMode = smActualHeight
           Font.Charset = DEFAULT_CHARSET
@@ -5166,7 +5166,7 @@ object FrmCatalogoNominas: TFrmCatalogoNominas
         object Picture2: TfrxPictureView
           ShiftMode = smDontShift
           Left = 597.165740000000000000
-          Top = 3.779530000000001000
+          Top = 3.779530000000000000
           Width = 139.842610000000000000
           Height = 75.590600000000000000
           ShowHint = False
@@ -5183,7 +5183,6 @@ object FrmCatalogoNominas: TFrmCatalogoNominas
           Width = 593.386210000000000000
           Height = 18.897650000000000000
           ShowHint = False
-          DataField = 'valor1'
           DataSet = FDSDatosConfiguracion
           DataSetName = 'FDSDatosConfiguracion'
           Font.Charset = DEFAULT_CHARSET
@@ -5192,7 +5191,7 @@ object FrmCatalogoNominas: TFrmCatalogoNominas
           Font.Name = 'Arial'
           Font.Style = [fsBold]
           Memo.UTF8W = (
-            '[FDSDatosConfiguracion."valor1"]')
+            '[FDSOrganizacion."TituloOrganizacion"]')
           ParentFont = False
         end
         object Memo117: TfrxMemoView
@@ -5278,7 +5277,7 @@ object FrmCatalogoNominas: TFrmCatalogoNominas
         end
         object Memo122: TfrxMemoView
           Left = 517.795610000000000000
-          Top = 56.692949999999990000
+          Top = 56.692950000000000000
           Width = 71.811070000000000000
           Height = 11.338590000000000000
           ShowHint = False
@@ -5294,7 +5293,7 @@ object FrmCatalogoNominas: TFrmCatalogoNominas
         end
         object Memo123: TfrxMemoView
           Left = 517.795610000000000000
-          Top = 68.031540000000010000
+          Top = 68.031540000000000000
           Width = 71.811070000000000000
           Height = 11.338590000000000000
           ShowHint = False
@@ -5338,7 +5337,7 @@ object FrmCatalogoNominas: TFrmCatalogoNominas
         Condition = 'FDSPersonalDetalleNomina."IdPersonal"'
         StartNewPage = True
         object Shape1: TfrxShapeView
-          Top = 32.574829999999990000
+          Top = 32.574830000000000000
           Width = 740.787880000000000000
           Height = 105.826832680000000000
           ShowHint = False
@@ -5398,7 +5397,7 @@ object FrmCatalogoNominas: TFrmCatalogoNominas
         end
         object Memo69: TfrxMemoView
           Left = 94.488250000000000000
-          Top = 51.472480000000020000
+          Top = 51.472480000000000000
           Width = 132.283550000000000000
           Height = 11.338582680000000000
           ShowHint = False
@@ -5413,7 +5412,7 @@ object FrmCatalogoNominas: TFrmCatalogoNominas
         end
         object Memo70: TfrxMemoView
           Left = 94.488250000000000000
-          Top = 74.149659999999990000
+          Top = 74.149660000000000000
           Width = 132.283550000000000000
           Height = 11.338582680000000000
           ShowHint = False
@@ -5428,7 +5427,7 @@ object FrmCatalogoNominas: TFrmCatalogoNominas
         end
         object Memo72: TfrxMemoView
           Left = 253.228510000000000000
-          Top = 40.133890000000010000
+          Top = 40.133890000000000000
           Width = 113.385900000000000000
           Height = 11.338582680000000000
           ShowHint = False
@@ -5443,7 +5442,7 @@ object FrmCatalogoNominas: TFrmCatalogoNominas
         end
         object Memo78: TfrxMemoView
           Left = 404.409710000000000000
-          Top = 40.133890000000010000
+          Top = 40.133890000000000000
           Width = 64.252010000000000000
           Height = 11.338582680000000000
           ShowHint = False
@@ -5463,7 +5462,7 @@ object FrmCatalogoNominas: TFrmCatalogoNominas
         end
         object Memo3: TfrxMemoView
           Left = 94.488250000000000000
-          Top = 40.133890000000010000
+          Top = 40.133890000000000000
           Width = 132.283550000000000000
           Height = 11.338582680000000000
           ShowHint = False
@@ -5478,7 +5477,7 @@ object FrmCatalogoNominas: TFrmCatalogoNominas
         end
         object Memo5: TfrxMemoView
           Left = 94.488250000000000000
-          Top = 62.811069999999970000
+          Top = 62.811070000000000000
           Width = 132.283550000000000000
           Height = 11.338582680000000000
           ShowHint = False
@@ -5493,7 +5492,7 @@ object FrmCatalogoNominas: TFrmCatalogoNominas
         end
         object Memo6: TfrxMemoView
           Left = 7.779530000000000000
-          Top = 40.133890000000010000
+          Top = 40.133890000000000000
           Width = 86.929190000000000000
           Height = 11.338582680000000000
           ShowHint = False
@@ -5508,7 +5507,7 @@ object FrmCatalogoNominas: TFrmCatalogoNominas
         end
         object Memo7: TfrxMemoView
           Left = 7.779530000000000000
-          Top = 51.472480000000020000
+          Top = 51.472480000000000000
           Width = 86.929190000000000000
           Height = 11.338582680000000000
           ShowHint = False
@@ -5523,7 +5522,7 @@ object FrmCatalogoNominas: TFrmCatalogoNominas
         end
         object Memo8: TfrxMemoView
           Left = 7.779530000000000000
-          Top = 62.811069999999970000
+          Top = 62.811070000000000000
           Width = 86.929190000000000000
           Height = 11.338582680000000000
           ShowHint = False
@@ -5538,7 +5537,7 @@ object FrmCatalogoNominas: TFrmCatalogoNominas
         end
         object Memo9: TfrxMemoView
           Left = 7.779530000000000000
-          Top = 74.149659999999990000
+          Top = 74.149660000000000000
           Width = 86.929190000000000000
           Height = 11.338582680000000000
           ShowHint = False
@@ -5553,7 +5552,7 @@ object FrmCatalogoNominas: TFrmCatalogoNominas
         end
         object Memo16: TfrxMemoView
           Left = 506.457020000000000000
-          Top = 40.133890000000010000
+          Top = 40.133890000000000000
           Width = 98.267780000000000000
           Height = 11.338582680000000000
           ShowHint = False
@@ -5568,7 +5567,7 @@ object FrmCatalogoNominas: TFrmCatalogoNominas
         end
         object Memo17: TfrxMemoView
           Left = 506.457020000000000000
-          Top = 51.472480000000020000
+          Top = 51.472480000000000000
           Width = 86.929190000000000000
           Height = 11.338582680000000000
           ShowHint = False
@@ -5583,7 +5582,7 @@ object FrmCatalogoNominas: TFrmCatalogoNominas
         end
         object Memo37: TfrxMemoView
           Left = 604.724800000000000000
-          Top = 40.133890000000010000
+          Top = 40.133890000000000000
           Width = 124.724490000000000000
           Height = 11.338582680000000000
           ShowHint = False
@@ -5598,7 +5597,7 @@ object FrmCatalogoNominas: TFrmCatalogoNominas
           ParentFont = False
         end
         object Memo28: TfrxMemoView
-          Top = 17.456709999999990000
+          Top = 17.456710000000000000
           Width = 740.787880000000000000
           Height = 15.118112680000000000
           ShowHint = False
@@ -5618,7 +5617,7 @@ object FrmCatalogoNominas: TFrmCatalogoNominas
         end
         object Memo29: TfrxMemoView
           Left = 604.724800000000000000
-          Top = 51.472480000000020000
+          Top = 51.472480000000000000
           Width = 124.724490000000000000
           Height = 11.338582680000000000
           ShowHint = False
@@ -5714,7 +5713,7 @@ object FrmCatalogoNominas: TFrmCatalogoNominas
         end
         object Memo4: TfrxMemoView
           Left = 253.228510000000000000
-          Top = 52.913419999999970000
+          Top = 52.913420000000000000
           Width = 147.401670000000000000
           Height = 11.338582680000000000
           ShowHint = False
@@ -5729,7 +5728,7 @@ object FrmCatalogoNominas: TFrmCatalogoNominas
         end
         object Memo11: TfrxMemoView
           Left = 400.630180000000000000
-          Top = 52.913419999999970000
+          Top = 52.913420000000000000
           Width = 68.031540000000000000
           Height = 11.338582680000000000
           ShowHint = False
@@ -5749,7 +5748,7 @@ object FrmCatalogoNominas: TFrmCatalogoNominas
         end
         object Memo115: TfrxMemoView
           Left = 253.228510000000000000
-          Top = 64.252009999999990000
+          Top = 64.252010000000000000
           Width = 147.401670000000000000
           Height = 11.338582680000000000
           ShowHint = False
@@ -5764,7 +5763,7 @@ object FrmCatalogoNominas: TFrmCatalogoNominas
         end
         object Memo116: TfrxMemoView
           Left = 400.630180000000000000
-          Top = 64.252009999999990000
+          Top = 64.252010000000000000
           Width = 68.031540000000000000
           Height = 11.338582680000000000
           ShowHint = False
@@ -5789,7 +5788,7 @@ object FrmCatalogoNominas: TFrmCatalogoNominas
         Width = 740.409927000000000000
         object Subreport1: TfrxSubreport
           Left = 241.889920000000000000
-          Top = 75.590599999999880000
+          Top = 75.590599999999900000
           Width = 94.488250000000000000
           Height = 18.897650000000000000
           Visible = False
@@ -5797,7 +5796,7 @@ object FrmCatalogoNominas: TFrmCatalogoNominas
           Page = RNomina.Percepciones
         end
         object Memo27: TfrxMemoView
-          Top = 95.165429999999850000
+          Top = 95.165429999999800000
           Width = 445.984540000000000000
           Height = 49.133890000000000000
           ShowHint = False
@@ -5816,7 +5815,7 @@ object FrmCatalogoNominas: TFrmCatalogoNominas
           ParentFont = False
         end
         object Memo93: TfrxMemoView
-          Top = 3.779530000000022000
+          Top = 3.779530000000020000
           Width = 740.787880000000000000
           Height = 15.118110240000000000
           ShowHint = False
@@ -5839,7 +5838,7 @@ object FrmCatalogoNominas: TFrmCatalogoNominas
           ParentFont = False
         end
         object Memo92: TfrxMemoView
-          Top = 41.574830000000020000
+          Top = 41.574830000000000000
           Width = 445.984540000000000000
           Height = 15.118110240000000000
           ShowHint = False
@@ -5863,7 +5862,7 @@ object FrmCatalogoNominas: TFrmCatalogoNominas
           VAlign = vaCenter
         end
         object Memo94: TfrxMemoView
-          Top = 56.692949999999990000
+          Top = 56.692950000000000000
           Width = 445.984540000000000000
           Height = 15.118110240000000000
           ShowHint = False
@@ -5941,14 +5940,14 @@ object FrmCatalogoNominas: TFrmCatalogoNominas
         end
         object Subreport4: TfrxSubreport
           Left = 377.953000000000000000
-          Top = 31.236239999999720000
+          Top = 31.236239999999700000
           Width = 94.488250000000000000
           Height = 18.897650000000000000
           ShowHint = False
           Page = RNomina.Page4
         end
         object Line2: TfrxLineView
-          Top = 22.677179999999680000
+          Top = 22.677179999999700000
           Width = 740.787401570000000000
           ShowHint = False
           Frame.Typ = [ftTop]
@@ -7358,7 +7357,7 @@ object FrmCatalogoNominas: TFrmCatalogoNominas
       BottomMargin = 10.000000000000000000
       object MasterData9: TfrxMasterData
         Height = 265.023810000000000000
-        Top = 36.000000000000000000
+        Top = 41.574830000000000000
         Width = 740.409927000000000000
         DataSet = FDSTimbrado
         DataSetName = 'FDSTimbrado'
@@ -7699,13 +7698,13 @@ object FrmCatalogoNominas: TFrmCatalogoNominas
         end
       end
       object GroupHeader9: TfrxGroupHeader
-        Top = 16.000000000000000000
+        Top = 18.897650000000000000
         Width = 740.409927000000000000
         Condition = 'FDSTimbrado."IdPersonal"'
       end
       object GroupFooter7: TfrxGroupFooter
         Height = 83.149660000000000000
-        Top = 320.000000000000000000
+        Top = 328.819110000000000000
         Visible = False
         Width = 740.409927000000000000
         object Memo95: TfrxMemoView
