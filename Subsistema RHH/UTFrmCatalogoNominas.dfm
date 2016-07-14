@@ -5015,7 +5015,7 @@ object FrmCatalogoNominas: TFrmCatalogoNominas
     PrintOptions.Printer = 'Por defecto'
     PrintOptions.PrintOnSheet = 0
     ReportOptions.CreateDate = 41536.577245775500000000
-    ReportOptions.LastChange = 42214.402401122700000000
+    ReportOptions.LastChange = 42565.510502847220000000
     ScriptLanguage = 'PascalScript'
     ScriptText.Strings = (
       'procedure Memo15OnBeforePrint(Sender: TfrxComponent);'
@@ -7650,7 +7650,6 @@ object FrmCatalogoNominas: TFrmCatalogoNominas
           DisplayFormat.DecimalSeparator = '.'
           DisplayFormat.ThousandSeparator = ','
           DisplayFormat.FormatStr = '%2.2m'
-          DisplayFormat.Kind = fkNumeric
           Font.Charset = DEFAULT_CHARSET
           Font.Color = clBlack
           Font.Height = -8

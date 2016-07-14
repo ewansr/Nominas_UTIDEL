@@ -1,3 +1,6 @@
 Subsistema RHH/__history/
 *.dcu
 __history/
+Debug/Win32/XMLEnvelope.txt
+Client.identcache
+Debug/Win32/XMLEnvelopeXML.txt

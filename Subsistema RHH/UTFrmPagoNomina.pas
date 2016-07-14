@@ -844,7 +844,7 @@ begin
               Empleado.ComplementoNomina.Departamento := cdPersonalIncluido.FieldByName('TituloDepartamento').AsString;
     //****REVISAR LA PARTE DE LOS BANCOS ****////////////////////////
               //Empleado.ComplementoNomina.Banco := cdPersonalIncluido.FieldByName('Clavebanco').AsInteger; //pendiente
-              Empleado.ComplementoNomina.ClabeBancaria := cdPersonalIncluido.FieldByName('Clabe').AsString;
+              //Empleado.ComplementoNomina.ClabeBancaria := cdPersonalIncluido.FieldByName('Clabe').AsString;
               Empleado.ComplementoNomina.Banco := cdPersonalIncluido.FieldByName('ClaveBanco').AsInteger; //pendiente
               //Empleado.ComplementoNomina.ClabeBancaria := '0000000000';//pendiente
               Empleado.ComplementoNomina.FechaInicioLabores := StrToDate(cdPersonalIncluido.FieldByName('FechaReingreso').AsString);

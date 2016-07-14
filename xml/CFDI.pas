@@ -696,7 +696,7 @@ begin
   fXMLComplemento := fComplementoNominaXML.AddChild('nomina:Nomina');
   fXMLComplemento.Attributes['xmlns:nomina'] := 'http://www.sat.gob.mx/nomina';
   fXMLComplemento.Attributes['Version'] := '1.1';
-  if cEmisor.RegistroPatronal <> '' then begin
+  if cReceptor.RegistroPatronal <> '' then begin
     fXMLComplemento.Attributes['RegistroPatronal'] := cReceptor.RegistroPatronal;
   end;
   fXMLComplemento.Attributes['NumEmpleado'] := cReceptor.ComplementoNomina.NumeroEmpleado;
