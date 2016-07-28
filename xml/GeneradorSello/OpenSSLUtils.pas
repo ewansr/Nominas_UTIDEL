@@ -68,7 +68,7 @@ TKeyPairGenerator = class
     procedure KeyFileNames(KeyPairNames: string); overload;
     procedure KeyFileNames(PrivateKeyName, PublicKeyName: TFileName); overload;
     procedure GenerateRSA;
-    property KeyLength: word read fKeyLength write fSetKeyLength default 1024;
+    property KeyLength: word read fKeyLength write fSetKeyLength default 2048;
     property Password: string write fPassword;
     property SeedFile: TFileName read fSeedFile write fSeedFile;
 end;
@@ -249,7 +249,7 @@ var
   TmpDir: string;
   TmpFile: TSearchRec;
 begin
-fKeyLength := 1024;
+fKeyLength := 2048;
 fPassword := '';
 TmpDir := GetEnvironmentVariable('TEMP');
 if FindFirst(TmpDir + '\*', faReadOnly and faHidden and faSysFile and faArchive,
@@ -300,7 +300,7 @@ rsa := RSA_generate_key(fKeyLength, RSA_F4, nil, ErrMsg);
 if rsa=nil then
   begin
   BIO_reset(ErrMsg);
-  BIO_read(ErrMsg, @buff, 1024);
+  BIO_read(ErrMsg, @buff, 2048);
   raise EOpenSSL.Create(ToChar(@buff));
   end;
 

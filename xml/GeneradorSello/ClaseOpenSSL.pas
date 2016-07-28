@@ -395,10 +395,10 @@ var
   mdctx: EVP_MD_CTX;
   {$IF CompilerVersion >= 20}
       Inbuf: Array[0..999999] of AnsiChar; // Antes [0..8192]
-      Outbuf: array [0..1024] of AnsiChar;
+      Outbuf: array [0..2048] of AnsiChar;
   {$ELSE}
       Inbuf: Array[0..999999] of Char;
-      Outbuf: array [0..1024] of Char;
+      Outbuf: array [0..2048] of Char;
   {$IFEND}
 	ekLlavePrivada: pEVP_PKEY;
   Len, Tam: cardinal;
